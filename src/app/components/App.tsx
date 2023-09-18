@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
 import '../styles/ui.css';
+import UniversButton from './UniversButton/UniversButton';
+import Badge from './Badge/Badge';
 
 function App() {
   const textbox = React.useRef<HTMLInputElement>(undefined);
@@ -32,6 +34,8 @@ function App() {
   return (
     <div>
       <img src={logo} />
+      <UniversButton label="Button" univers="test" outline={true} />
+      <Badge univers="test">Test</Badge>
       <h2>Rectangle Creator</h2>
       <p>
         Count: <input ref={countRef} />

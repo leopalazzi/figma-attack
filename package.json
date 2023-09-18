@@ -9,8 +9,10 @@
     "prettier:format": "prettier --write '**/*.{js,jsx,ts,tsx,css,json}' "
   },
   "dependencies": {
+    "bem-cn": "^3.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.67.0"
   },
   "devDependencies": {
     "@figma/plugin-typings": "^1.50.0",
@@ -22,6 +24,7 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react-dev-utils": "^12.0.1",
+    "sass-loader": "^13.3.2",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",
