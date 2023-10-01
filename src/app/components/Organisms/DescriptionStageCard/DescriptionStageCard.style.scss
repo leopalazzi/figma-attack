@@ -1,0 +1,70 @@
+.description-stage {
+  &__card {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 10px;
+    background: #1f1f1f;
+    color: #e0e0e0;
+  }
+
+  &__text-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__steps-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    flex-direction: column;
+  }
+
+  &__step-text-container {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+  &__step-container {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    gap: 24px;
+
+    &:not(:last-child){
+        &::after{
+            content:"";
+            border-bottom: 1px solid #4F4F4F;
+            position: relative;
+            width: 251px;
+        }
+    }
+
+
+  }
+}

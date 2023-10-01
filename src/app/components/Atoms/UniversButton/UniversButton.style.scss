@@ -9,18 +9,19 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .univers-button {
-  &__test {
-    background-color: red;
+  &__neophyte_nexus {
+    background-color: #3C2FED;
     color: #fff;
     border: none;
 
     &--outline {
-      background-color: #F6F6F6;
-      border: 1px solid red;
-      color: red;
+      border: 1px solid #3C2FED;
+      background-color: #FFF;
+      color: #3C2FED;
     }
   }
 }

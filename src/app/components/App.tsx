@@ -1,50 +1,62 @@
-import React from 'react';
-import logo from '../assets/logo.svg';
 import '../styles/ui.css';
-import UniversButton from './UniversButton/UniversButton';
-import Badge from './Badge/Badge';
+import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function App() {
-  const textbox = React.useRef<HTMLInputElement>(undefined);
+  // const textbox = useRef<HTMLInputElement>(undefined);
+  const [onBoardingDone, setOnBoardingDone] = useState(false);
+  const navigate = useNavigate();
 
-  const countRef = React.useCallback((element: HTMLInputElement) => {
-    if (element) element.value = '5';
-    textbox.current = element;
-  }, []);
+  // function handleClick() {
+  // }
 
-  const onCreate = () => {
-    const count = parseInt(textbox.current.value, 10);
-    parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*');
-  };
+  // const countRef = useCallback((element: HTMLInputElement) => {
+  //   if (element) element.value = '5';
+  //   textbox.current = element;
+  // }, []);
 
-  const onCancel = () => {
-    parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*');
-  };
+  // const onCreate = () => {
+  //   const count = parseInt(textbox.current.value, 10);
+  //   parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*');
+  // };
 
-  React.useEffect(() => {
+  // const onCancel = () => {
+  //   parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*');
+  // };
+
+  // useEffect(() => {
+  //   parent.postMessage({ pluginMessage: { type: 'check-onboarding' } }, '*');
+  // }, []);
+
+  // const onClickAction = () => {
+  //   parent.postMessage({ pluginMessage: { type: 'onboarding-done' } }, '*');
+  // };
+
+  useEffect(() => {
     // This is how we read messages sent from the plugin controller
     window.onmessage = (event) => {
-      const { type, message } = event.data.pluginMessage;
-      if (type === 'create-rectangles') {
-        console.log(`Figma Says: ${message}`);
+      const { type, onBoardingStatus } = event.data.pluginMessage;
+      if (type === 'onboarding-status') {
+        console.log(`Figma Says: ${onBoardingStatus}`);
+        setOnBoardingDone(onBoardingStatus)
       }
     };
   }, []);
 
+  useEffect(()=>{
+    if(!onBoardingDone)
+    {
+      navigate("/onboarding/1");
+    }
+    else{
+      navigate("/home");
+    }
+  },[onBoardingDone])
+
   return (
-    <div>
-      <img src={logo} />
-      <UniversButton label="Button" univers="test" outline={true} />
-      <Badge univers="test">Test</Badge>
-      <h2>Rectangle Creator</h2>
-      <p>
-        Count: <input ref={countRef} />
-      </p>
-      <button id="create" onClick={onCreate}>
-        Create
-      </button>
-      <button onClick={onCancel}>Cancel</button>
-    </div>
+    <>
+    
+    </>
   );
 }
 

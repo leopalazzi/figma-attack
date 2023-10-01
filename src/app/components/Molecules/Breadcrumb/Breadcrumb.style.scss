@@ -1,0 +1,27 @@
+.breadcrumb {
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__link-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__link {
+    color: #828282;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  &__arrow{
+    color : #BDBDBD;
+    font-size:16px;
+  }
+}

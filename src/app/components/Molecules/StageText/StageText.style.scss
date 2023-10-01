@@ -1,0 +1,9 @@
+.stage-text{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        flex: 1 0 0;
+    }
+}

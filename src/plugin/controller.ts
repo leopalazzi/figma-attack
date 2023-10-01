@@ -1,26 +1,41 @@
-figma.showUI(__html__);
+figma.showUI(__html__, { width: 1511, height: 863 });
 
-figma.ui.onmessage = (msg) => {
-  if (msg.type === 'create-rectangles') {
-    const nodes = [];
+// figma.clientStorage
+//   .getAsync('size')
+//   .then((size) => {
+//     if (size)
+//     {
+//       figma.ui.resize(size.w, size.h);
+//     }
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
 
-    for (let i = 0; i < msg.count; i++) {
-      const rect = figma.createRectangle();
-      rect.x = i * 150;
-      rect.fills = [{ type: 'SOLID', color: { r: 1, g: 0.5, b: 0 } }];
-      figma.currentPage.appendChild(rect);
-      nodes.push(rect);
-    }
-
-    figma.currentPage.selection = nodes;
-    figma.viewport.scrollAndZoomIntoView(nodes);
-
-    // This is how figma responds back to the ui
-    figma.ui.postMessage({
-      type: 'create-rectangles',
-      message: `Created ${msg.count} Rectangles`,
-    });
+figma.ui.onmessage = async (msg) => {
+  switch (msg.type) {
+    case 'check-onboarding':
+      const onBoardingStatus = await figma.clientStorage.getAsync('onBoardingStatus');
+      figma.ui.postMessage({
+        type: 'onboarding-status',
+        onBoardingStatus: !!onBoardingStatus,
+      });
+      break;
+    case 'onboarding-done':
+      figma.clientStorage.setAsync('onBoardingStatus', false);
+      break;
+    case 'resize':
+      if(msg.size.w >= 800)
+      {
+        figma.ui.resize(msg.size.w, msg.size.h);
+        figma.clientStorage.setAsync('size', msg.size).catch((err) => {
+          console.error(err);
+        });
+      }
+      break;
+    default:
+      break;
   }
 
-  figma.closePlugin();
+  // figma.closePlugin();
 };
