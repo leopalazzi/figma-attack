@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "bem-cn": "^3.0.1",
+    "dom-to-image": "^2.6.0",
     "i18next": "^23.5.1",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.2",
@@ -20,7 +21,7 @@
     "sass": "^1.67.0"
   },
   "devDependencies": {
-    "@figma/plugin-typings": "^1.50.0",
+    "@figma/plugin-typings": "^1.79.0",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "css-loader": "^6.7.1",

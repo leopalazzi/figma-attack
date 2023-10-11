@@ -1,0 +1,45 @@
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.stage-story {
+  &__help-container {
+    -webkit-animation: fade-in 1s ease-in both;
+    animation: fade-in 1s ease-in both;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+  }
+
+  &--help-text{
+    margin: 0;
+  }
+}

@@ -5,19 +5,20 @@ import HorizontalCard from '../../components/Organisms/HorizontalCard/Horizontal
 const Home = () => {
   const { t } = useTranslation();
   const universes: Array<any> = t('universes', { returnObjects: true });
-
   return (
-    <Layout>
+    <Layout disableNavBar={true}>
       {universes.map((universe) => {
+        const numberDungeons = universe.dungeons.length;
+        const numberSideQuests = universe.side_quests.length;
         const badgesData = [
           { label: universe.level },
           {
             universe: universe.code,
-            label: universe.numberDungeons,
+            label: `${numberDungeons} ${t("dungeonsLabel")}`,
           },
           {
             universe: universe.code,
-            label: universe.numberSideQuests,
+            label:  `${numberSideQuests} ${t("sideQuestsLabel")}`,
           },
         ];
         return (

@@ -18,6 +18,10 @@
     color: #fff;
     border: none;
 
+    &:hover{
+      background-color: #0C438D;
+    }
+
     &--outline {
       border: 1px solid #3C2FED;
       background-color: #FFF;

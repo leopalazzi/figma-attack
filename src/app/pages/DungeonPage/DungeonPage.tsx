@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Breadcrumb from '../../components/Molecules/Breadcrumb/Breadcrumb';
 import Layout from '../../components/Template/Layout/Layout';
 import StageCard from '../../components/Organisms/StageCard/StageCard';
+import HorizontalCard from '../../components/Organisms/HorizontalCard/HorizontalCard';
 
 const DungeonPage = () => {
   const { t } = useTranslation();
@@ -15,6 +16,13 @@ const DungeonPage = () => {
     }
   });
 
+  const badgesData = [
+    {
+      universe: currentUniverse.code,
+      label:  `${currentDungeon.stages.length} ${t("stageLabel")}s`,
+    },
+  ];
+
   return (
     <Layout>
       <h1>DUNGEON PAGE</h1>
@@ -24,6 +32,7 @@ const DungeonPage = () => {
           { url: `/universe/${universeCode}`, label: currentUniverse.title },
         ]}
       />
+      <HorizontalCard title={currentDungeon.title} badgesData={badgesData} universCode={currentUniverse.code} activateClick={false}/>
       {currentDungeon.stages.map((stage, index) => {
         return (
           <StageCard

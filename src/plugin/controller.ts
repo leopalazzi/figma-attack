@@ -25,13 +25,32 @@ figma.ui.onmessage = async (msg) => {
       figma.clientStorage.setAsync('onBoardingStatus', false);
       break;
     case 'resize':
-      if(msg.size.w >= 800)
-      {
-        figma.ui.resize(msg.size.w, msg.size.h);
-        figma.clientStorage.setAsync('size', msg.size).catch((err) => {
-          console.error(err);
-        });
-      }
+      // if(msg.size.w >= 800)
+      // {
+      //   figma.ui.resize(msg.size.w, msg.size.h);
+      //   figma.clientStorage.setAsync('size', msg.size).catch((err) => {
+      //     console.error(err);
+      //   });
+      // }
+      break;
+    case 'paste-stage':
+      const rect = figma.createRectangle();
+      const { imageData } = msg;
+      const img = figma.createImage(imageData);
+      const { width, height } = await img.getSizeAsync();
+      rect.resize(width, height);
+
+      rect.fills = [
+        {
+          type: 'IMAGE',
+          imageHash: img.hash,
+          scaleMode: 'FILL',
+        },
+      ];
+      figma.currentPage.appendChild(rect);
+      const nodes = [rect];
+
+      figma.viewport.scrollAndZoomIntoView(nodes);
       break;
     default:
       break;

@@ -4,31 +4,30 @@ import { useTranslation } from 'react-i18next';
 import Bem from '../../../helpers/Bem';
 import StageText from '../../Molecules/StageText/StageText';
 import './DescriptionStageCard.style.scss';
+import StageStoryHelps from '../../Molecules/StageStoryHelps/StageStoryHelps';
 
 const DescriptionStageCard = ({ title, description, steps }) => {
   const { t } = useTranslation();
   const b = Bem('description-stage');
-  // const navigate = useNavigate();
-
-  // const onClick = () => {
-  //   navigate(`/universe/${universCode}/dungeon/${dungeonCode}`);
-  // };
 
   return (
-    <div className={b('card')}>
+    <div className={b('card')} id="stage-card">
       <div className={b('text-head')}>
         <h4 className={b('title')}>{title}</h4>
         <p className={b('description')}>{description}</p>
       </div>
       <div className={b('steps-container')}>
-        {steps.map((step, index) => {
+        {steps?.map((step, index) => {
           return (
-            <div className={b('step-container')}>
-              <div className={b('step-text-container')}>
-              <StageText title={`${t('stepLabel')} ${index + 1}`} description={step.title} />
-              <StageText title={t('storyLabel')} description={step.description} />
+            <>
+              <div className={b('step-container')}>
+                <StageText title={`${t('stepLabel')} ${index + 1}`} description={step.title} />
               </div>
-            </div>
+              <div>
+                <StageText title={t('storyLabel')} description={step.description} />
+                {step.helps?.length > 0 && <StageStoryHelps helps={step.helps} />}
+              </div>
+            </>
           );
         })}
       </div>
