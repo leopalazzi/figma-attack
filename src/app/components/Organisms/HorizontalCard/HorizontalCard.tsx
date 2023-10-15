@@ -3,8 +3,10 @@ import Badge from '../../Atoms/Badge/Badge';
 import { useNavigate } from 'react-router-dom';
 import './HorizontalCard.style.scss';
 import { useTranslation } from 'react-i18next';
+import { FunctionComponent } from 'react';
+import { HorizontalCardProps } from './HorizontalCard.model';
 
-const HorizontalCard = ({ title, badgesData, universCode, activateClick }) => {
+const HorizontalCard: FunctionComponent<HorizontalCardProps> = ({ title, badgesData, universCode, activateClick, hideDiscoverLabel }) => {
   const navigate = useNavigate();
   const b = Bem('horizontal-card');
   const { t } = useTranslation();
@@ -19,11 +21,12 @@ const HorizontalCard = ({ title, badgesData, universCode, activateClick }) => {
       })}
       className={b('container')}
     >
-      <div>
+      <div className={b("left-side")}>
         <div className={b("text-container")}>
-          <span className={b('discover-text')}>{t('discoberLabel')}</span>
+          {!!!hideDiscoverLabel && <span className={b('discover-text')}>{t('discoberLabel')}</span>}
           <h2 className={b('title')}>{title}</h2>
         </div>
+        <div className={b("badges")}>
         {badgesData.map((badgeData, index) => {
           return (
             <Badge key={`${badgeData.label}-${index}`} universe={badgeData.universe}>
@@ -31,6 +34,7 @@ const HorizontalCard = ({ title, badgesData, universCode, activateClick }) => {
             </Badge>
           );
         })}
+        </div>
       </div>
     </div>
   );

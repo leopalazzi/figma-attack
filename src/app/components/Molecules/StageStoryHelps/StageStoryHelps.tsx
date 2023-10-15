@@ -3,7 +3,7 @@ import ActionButton from '../../Atoms/ActionButton/ActionButton';
 import Bem from '../../../helpers/Bem';
 import { useState } from 'react';
 import HelpIcon from '../../../icons/HelpIcon/HelpIcon';
-import "./StageStoryHelps.style.scss";
+import './StageStoryHelps.style.scss';
 
 const StageStoryHelps = ({ helps }) => {
   const { t } = useTranslation();
@@ -16,19 +16,18 @@ const StageStoryHelps = ({ helps }) => {
 
   return (
     <div className={b('container')}>
+      <ActionButton label={isHelpDisplayed ? t('hideHelpLabel') : t('checkHelpLabel')} onClick={onClickHelp} />
       <div className={b('helps-container')}>
         {isHelpDisplayed &&
           helps.map((help) => {
             return (
               <div className={b('help-container')}>
                 <HelpIcon />
-                <p className={b("help-text")}>{help}</p>
+                <p className={b('help-text')}>{help}</p>
               </div>
             );
           })}
       </div>
-
-      <ActionButton label={isHelpDisplayed ? t('hideHelpLabel') : t('checkHelpLabel')} onClick={onClickHelp} />
     </div>
   );
 };

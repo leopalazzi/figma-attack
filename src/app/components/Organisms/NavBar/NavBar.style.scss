@@ -6,9 +6,14 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: #f7f7f7;
+    // background: #f7f7f7;
     bottom: 0;
     width: 100%;
+    border-radius: 16px;
+    background: #1f1f1f;
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.24);
+    max-width: -webkit-fill-available;
+    margin: 0 40px 40px 40px;
   }
 
   &__button {
@@ -18,18 +23,18 @@
     align-items: center;
     gap: 16px;
     flex: 1 0 0;
-    background: #F7F7F7;
+    background: #1f1f1f;
     border-radius: 8px;
     border: none;
-    color: #1f1f1f;
+    color: #f7f7f7;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
 
-    &--active{
-      color: #F6F6F6;
-      background-color: #1F1F1F;
+    &--active {
+      color: #1f1f1f;
+      background-color: #f7f7f7;
     }
   }
 }

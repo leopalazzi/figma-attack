@@ -19,7 +19,7 @@ const DungeonPage = () => {
   const badgesData = [
     {
       universe: currentUniverse.code,
-      label:  `${currentDungeon.stages.length} ${t("stageLabel")}s`,
+      label: `${currentDungeon.stages.length} ${t('stageLabel')}s`,
     },
   ];
 
@@ -32,7 +32,13 @@ const DungeonPage = () => {
           { url: `/universe/${universeCode}`, label: currentUniverse.title },
         ]}
       />
-      <HorizontalCard title={currentDungeon.title} badgesData={badgesData} universCode={currentUniverse.code} activateClick={false}/>
+      <HorizontalCard
+        title={currentDungeon.title}
+        badgesData={badgesData}
+        universCode={currentUniverse.code}
+        activateClick={false}
+        hideDiscoverLabel={true}
+      />
       {currentDungeon.stages.map((stage, index) => {
         return (
           <StageCard

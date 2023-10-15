@@ -26,6 +26,12 @@
       border: 1px solid #3C2FED;
       background-color: #FFF;
       color: #3C2FED;
+
+      &:hover{
+        border-color: #0C438D;
+        color: #0C438D;
+        background-color: #FFF;
+      }
     }
   }
 }

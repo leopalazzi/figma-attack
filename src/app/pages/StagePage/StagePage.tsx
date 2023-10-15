@@ -1,14 +1,17 @@
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import Breadcrumb from '../../components/Molecules/Breadcrumb/Breadcrumb';
 import Layout from '../../components/Template/Layout/Layout';
 import DescriptionStageCard from '../../components/Organisms/DescriptionStageCard/DescriptionStageCard';
 import domtoimage from 'dom-to-image';
 import StageButtons from '../../components/Molecules/StageButtons/StageButtons';
+import NextStage from '../../components/Molecules/NextStage/NextStage';
+import { useEffect } from 'react';
 
 const StagePage = () => {
   const { t } = useTranslation();
   const { dungeonCode, stageNumber, universeCode } = useParams();
+  const { pathname } = useLocation();
   const universes: Array<any> = t('universes', { returnObjects: true });
   const currentUniverse = universes.find((universe) => universe.code === universeCode);
   const currentDungeon = currentUniverse?.dungeons.find((dungeon) => {
@@ -18,6 +21,9 @@ const StagePage = () => {
   });
 
   const currentStage = currentDungeon?.stages[Number(stageNumber) - 1];
+  const nextStage = currentDungeon?.stages[Number(stageNumber)];
+  const universeBaseUrl = `/universe/${universeCode}`;
+  const dungeonBaseUrl = `${universeBaseUrl}/dungeon/${dungeonCode}`;
 
   const exportToPng = () => {
     const currentStage = document.getElementById('stage-card');
@@ -38,21 +44,28 @@ const StagePage = () => {
       });
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <Layout>
       <Breadcrumb
         linksData={[
           { url: '/home', label: t('universesLabel') },
-          { url: `/universe/${universeCode}`, label: currentUniverse.title },
-          { url: `/universe/${universeCode}/dungeon/${dungeonCode}`, label: currentDungeon.title },
+          { url: universeBaseUrl, label: currentUniverse.title },
+          { url: dungeonBaseUrl, label: currentDungeon.title },
         ]}
       />
-      <StageButtons stageNumber={stageNumber} exportToPng={exportToPng}/>
+      <StageButtons stageNumber={stageNumber} exportToPng={exportToPng} />
       <DescriptionStageCard
         title={currentStage.title}
         description={currentStage.description}
         steps={currentStage.steps}
       />
+      {Number(stageNumber) < currentDungeon.stages.length && (
+        <NextStage title={nextStage.title} url={`${dungeonBaseUrl}/stage/${(Number(stageNumber) + 1).toString()}`} />
+      )}
     </Layout>
   );
 };
