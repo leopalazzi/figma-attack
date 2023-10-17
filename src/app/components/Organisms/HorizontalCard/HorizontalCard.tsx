@@ -19,7 +19,7 @@ const HorizontalCard: FunctionComponent<HorizontalCardProps> = ({ title, badgesD
         },
         tabIndex: 0,
       })}
-      className={b('container')}
+      className={b('container', {clickable: activateClick})}
     >
       <div className={b("left-side")}>
         <div className={b("text-container")}>

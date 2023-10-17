@@ -8,8 +8,12 @@
     border-radius: 20px;
     background: #fff;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+
+    &--clickable {
+      cursor: pointer;
+    }
   }
+
   &__left-side {
     display: flex;
     flex-direction: column;
