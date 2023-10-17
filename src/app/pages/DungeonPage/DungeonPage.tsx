@@ -4,6 +4,7 @@ import Breadcrumb from '../../components/Molecules/Breadcrumb/Breadcrumb';
 import Layout from '../../components/Template/Layout/Layout';
 import StageCard from '../../components/Organisms/StageCard/StageCard';
 import HorizontalCard from '../../components/Organisms/HorizontalCard/HorizontalCard';
+import "./DungeonPage.style.scss";
 
 const DungeonPage = () => {
   const { t } = useTranslation();
@@ -25,7 +26,6 @@ const DungeonPage = () => {
 
   return (
     <Layout>
-      <h1>DUNGEON PAGE</h1>
       <Breadcrumb
         linksData={[
           { url: '/home', label: t('universesLabel') },
@@ -38,6 +38,8 @@ const DungeonPage = () => {
         universCode={currentUniverse.code}
         activateClick={false}
         hideDiscoverLabel={true}
+        customClassName='dungeon-page-margin-bottom'
+
       />
       {currentDungeon.stages.map((stage, index) => {
         return (

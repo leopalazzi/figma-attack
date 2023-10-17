@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { FunctionComponent } from 'react';
 import { HorizontalCardProps } from './HorizontalCard.model';
 
-const HorizontalCard: FunctionComponent<HorizontalCardProps> = ({ title, badgesData, universCode, activateClick, hideDiscoverLabel }) => {
+const HorizontalCard: FunctionComponent<HorizontalCardProps> = ({ title, badgesData, universCode, activateClick, hideDiscoverLabel, customClassName }) => {
   const navigate = useNavigate();
   const b = Bem('horizontal-card');
   const { t } = useTranslation();
@@ -19,7 +19,7 @@ const HorizontalCard: FunctionComponent<HorizontalCardProps> = ({ title, badgesD
         },
         tabIndex: 0,
       })}
-      className={b('container', {clickable: activateClick})}
+      className={b('container', {clickable: activateClick}).mix(customClassName)}
     >
       <div className={b("left-side")}>
         <div className={b("text-container")}>

@@ -4,6 +4,7 @@ import Breadcrumb from '../../components/Molecules/Breadcrumb/Breadcrumb';
 import Layout from '../../components/Template/Layout/Layout';
 import HorizontalCard from '../../components/Organisms/HorizontalCard/HorizontalCard';
 import DungeonCards from '../../components/Organisms/DungeonCards/DungeonCards';
+import "./UniversePage.style.scss";
 
 const UniversePage = () => {
   const { t } = useTranslation();
@@ -33,6 +34,7 @@ const UniversePage = () => {
         badgesData={badgesData}
         title={currentUniverse.title}
         universCode={currentUniverse.code}
+        customClassName='universe-page-margin-bottom'
       />
       <DungeonCards dungeons={currentDungeons} universCode={code}/>
     </Layout>

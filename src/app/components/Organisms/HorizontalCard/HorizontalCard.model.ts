@@ -3,5 +3,6 @@ export type HorizontalCardProps = {
     badgesData: any, 
     universCode: string, 
     activateClick? : boolean, 
-    hideDiscoverLabel?: boolean
+    hideDiscoverLabel?: boolean,
+    customClassName?: string
 }

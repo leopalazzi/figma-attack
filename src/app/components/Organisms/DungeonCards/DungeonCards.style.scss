@@ -1,4 +1,7 @@
 .dungeon-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   &__title {
     color: #000;
     font-size: 24px;
