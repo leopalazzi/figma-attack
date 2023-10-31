@@ -1,62 +1,32 @@
 import '../styles/ui.css';
 import { useEffect, useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 function App() {
-  // const textbox = useRef<HTMLInputElement>(undefined);
-  const [onBoardingDone, setOnBoardingDone] = useState(false);
+  const [onBoardingDone, setOnBoardingDone] = useState(null);
   const navigate = useNavigate();
 
-  // function handleClick() {
-  // }
-
-  // const countRef = useCallback((element: HTMLInputElement) => {
-  //   if (element) element.value = '5';
-  //   textbox.current = element;
-  // }, []);
-
-  // const onCreate = () => {
-  //   const count = parseInt(textbox.current.value, 10);
-  //   parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*');
-  // };
-
-  // const onCancel = () => {
-  //   parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*');
-  // };
-
-  // useEffect(() => {
-  //   parent.postMessage({ pluginMessage: { type: 'check-onboarding' } }, '*');
-  // }, []);
-
-  // const onClickAction = () => {
-  //   parent.postMessage({ pluginMessage: { type: 'onboarding-done' } }, '*');
-  // };
-
   useEffect(() => {
-    // This is how we read messages sent from the plugin controller
     window.onmessage = (event) => {
-      const { type, onBoardingStatus } = event.data.pluginMessage;
-      if (type === 'onboarding-status') {
-        console.log(`Figma Says: ${onBoardingStatus}`);
-        setOnBoardingDone(onBoardingStatus)
+      if (event?.data?.pluginMessage) {
+        const { type, onBoardingDone } = event.data.pluginMessage;
+        if (type === 'onboarding-status') {
+          setOnBoardingDone(onBoardingDone);
+        }
       }
     };
   }, []);
 
-  useEffect(()=>{
-    if(!onBoardingDone)
-    {
-      navigate("/onboarding/1");
+  useEffect(() => {
+    if (onBoardingDone === null) return;
+    if (!onBoardingDone) {
+      navigate('/onboarding/1');
+    } else {
+      navigate('/home');
     }
-    else{
-      navigate("/home");
-    }
-  },[onBoardingDone])
+  }, [onBoardingDone]);
 
-  return (
-    <>
-    </>
-  );
+  return <></>;
 }
 
 export default App;

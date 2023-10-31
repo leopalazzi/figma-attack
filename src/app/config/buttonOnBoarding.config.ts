@@ -21,6 +21,7 @@ export const onBoardingbuttonsConfig = {
       {
         label: t('onboarding.page_2.button_2'),
         onClick: () => {
+          parent.postMessage({ pluginMessage: { type: 'onboarding-done'} }, '*');
           navigate('/home');
         },
         outline: true
@@ -32,6 +33,7 @@ export const onBoardingbuttonsConfig = {
     const buttons = [      {
         label: t('onboarding.page_3.button_1'),
         onClick: () => {
+          parent.postMessage({ pluginMessage: { type: 'onboarding-done'} }, '*');
           navigate('/home');
         },
       }]

@@ -15,14 +15,17 @@ figma.showUI(__html__, { width: 1511, height: 863 });
 figma.ui.onmessage = async (msg) => {
   switch (msg.type) {
     case 'check-onboarding':
-      const onBoardingStatus = await figma.clientStorage.getAsync('onBoardingStatus');
+      const onBoardingDone = await figma.clientStorage.getAsync('onBoardingDone');
       figma.ui.postMessage({
         type: 'onboarding-status',
-        onBoardingStatus: !!onBoardingStatus,
+        onBoardingDone: !!onBoardingDone,
       });
       break;
     case 'onboarding-done':
-      figma.clientStorage.setAsync('onBoardingStatus', false);
+      figma.clientStorage.setAsync('onBoardingDone', true);
+      break;
+    case 'onboarding-undone':
+      figma.clientStorage.setAsync('onBoardingDone', false);
       break;
     case 'resize':
       // if(msg.size.w >= 800)

@@ -12,6 +12,7 @@
   ],
   "networkAccess": {
     "allowedDomains": [
+      "https://www.youtube.com",
       "https://fonts.googleapis.com",
       "https://fonts.gstatic.com"
     ]

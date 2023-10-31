@@ -8,6 +8,8 @@ import Home from './pages/Home/Home';
 import UniversePage from './pages/UniversePage/UniversePage';
 import DungeonPage from './pages/DungeonPage/DungeonPage';
 import StagePage from './pages/StagePage/StagePage';
+import KnowledgeTemple from './pages/KnowledgeTemple/KnowledgeTemple';
+
 import Layout from './components/Template/Layout/Layout';
 // import { useState } from 'react';
 export const CtxApp = () => {
@@ -28,6 +30,7 @@ export const CtxApp = () => {
           <Route path="/universe/:universeCode/dungeon/:code" element={<DungeonPage />} />
           <Route path="/universe/:universeCode/dungeon/:dungeonCode/stage/:stageNumber" element={<StagePage />} />
           <Route path="/basement" element={<Layout>test</Layout>} />
+          <Route path="/knowledges" element={<KnowledgeTemple />} />
         </Routes>
       </MemoryRouter>
     </AppContext.Provider>

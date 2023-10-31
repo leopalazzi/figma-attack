@@ -6,7 +6,6 @@ import './DungeonCard.style.scss';
 import Badge from '../../Atoms/Badge/Badge';
 
 const DungeonCard = ({ title, imageUrl, description, universCode, dungeonCode, badges }) => {
-  console.log(badges);
   const { t } = useTranslation();
   const navigate = useNavigate();
   const b = Bem('dungeon-card');

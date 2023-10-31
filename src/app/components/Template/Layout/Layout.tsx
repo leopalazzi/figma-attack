@@ -7,7 +7,8 @@ const Layout = ({ children, disableNavBar } : LayoutProps) => {
   return (
     <div>
       <div className="layout">{children}</div>
-       {!disableNavBar && <NavBar/>}
+      <NavBar/>
+       {/* {!disableNavBar && <NavBar/>} */}
     </div>
   );
 };
