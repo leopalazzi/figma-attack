@@ -8,7 +8,7 @@ const Layout = ({ children, disableNavBar } : LayoutProps) => {
     <div>
       <div className="layout">{children}</div>
       <NavBar/>
-       {/* {!disableNavBar && <NavBar/>} */}
+       {!disableNavBar && <NavBar/>}
     </div>
   );
 };

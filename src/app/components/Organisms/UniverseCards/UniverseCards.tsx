@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next';
-import Bem from '../../../helpers/Bem';
 import './UniverseCards.style.scss';
 import HorizontalCard from '../HorizontalCard/HorizontalCard';
+import { FunctionComponent } from 'react';
+import { UniverseCardsProps } from './UniverseCards.model';
 
-const UniverseCards = ({ universes }) => {
+const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type, cardCustomClassName }) => {
   const { t } = useTranslation();
-  const b = Bem('universe-cards');
 
   return (
-    <div className={b()}>
+    <div className={`universe-cards-${type}`}>
       {universes.map((universe) => {
         const numberDungeons = universe.dungeons.length;
         const numberSideQuests = universe.side_quests.length;
@@ -30,6 +30,7 @@ const UniverseCards = ({ universes }) => {
             universCode={universe.code}
             badgesData={badgesData}
             activateClick={true}
+            customClassName={cardCustomClassName}
           />
         );
       })}

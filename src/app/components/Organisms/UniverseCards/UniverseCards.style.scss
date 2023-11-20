@@ -1,6 +1,13 @@
-.universe-cards{
+.universe-cards-vertical{
     display: flex;
     flex-direction: column;
     gap: 32px;
     width: 100%;
+}
+
+.universe-cards-horizontal{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 32px;
+    overflow-x: auto;
 }

@@ -53,7 +53,6 @@ const DungeonPage = () => {
           />
         );
       })}
-      <span>TEST</span>
     </Layout>
   );
 };

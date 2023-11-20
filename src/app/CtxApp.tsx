@@ -9,8 +9,7 @@ import UniversePage from './pages/UniversePage/UniversePage';
 import DungeonPage from './pages/DungeonPage/DungeonPage';
 import StagePage from './pages/StagePage/StagePage';
 import KnowledgeTemple from './pages/KnowledgeTemple/KnowledgeTemple';
-
-import Layout from './components/Template/Layout/Layout';
+import Basement from './pages/Basement/Basement';
 // import { useState } from 'react';
 export const CtxApp = () => {
   const [activePage, setActivePage] = useState('universes');
@@ -29,7 +28,7 @@ export const CtxApp = () => {
           <Route path="/universe/:code" element={<UniversePage />} />
           <Route path="/universe/:universeCode/dungeon/:code" element={<DungeonPage />} />
           <Route path="/universe/:universeCode/dungeon/:dungeonCode/stage/:stageNumber" element={<StagePage />} />
-          <Route path="/basement" element={<Layout>test</Layout>} />
+          <Route path="/basement" element={<Basement/>} />
           <Route path="/knowledges" element={<KnowledgeTemple />} />
         </Routes>
       </MemoryRouter>

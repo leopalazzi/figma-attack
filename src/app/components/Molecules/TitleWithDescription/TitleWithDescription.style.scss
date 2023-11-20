@@ -1,4 +1,4 @@
-.universes-description {
+.title-with-description {
   &__container {
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
     margin: 0;
   }
 
-  &__text {
+  &__description {
     color: #1f1f1f;
     font-size: 16px;
     font-style: normal;
