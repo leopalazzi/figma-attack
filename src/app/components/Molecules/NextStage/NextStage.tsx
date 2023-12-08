@@ -10,7 +10,6 @@ const NextStage = ({ title, url }) => {
 
   const onClick = (event) => {
     event.preventDefault();
-    console.log(url)
     navigate(url);
   };
 

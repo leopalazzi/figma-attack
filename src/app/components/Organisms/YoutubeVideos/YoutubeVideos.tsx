@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import './YoutubeVideos.style.scss';
+import YoutubeVideo from '../../Molecules/YoutubeVideo/YoutubeVideo';
 
 export const YoutubeVideos: FunctionComponent<any> = ({ videosData }) => {
   if (!videosData || videosData?.length === 0) {
@@ -8,17 +9,9 @@ export const YoutubeVideos: FunctionComponent<any> = ({ videosData }) => {
 
   return (
     <div className="youtube-videos-card">
-      {videosData.map((video) => {
+      {videosData.map((video, i) => {
         return (
-          <iframe
-            id="player"
-            key={video.id}
-            className="video-card"
-            width="100%"
-            height="254px"
-            src={`https://www.youtube.com/embed/${video.id}?enablejsapi=1`}
-            frameBorder="0"
-          />
+          <YoutubeVideo videoData={video} key={`youtube-video-${i}`}/>
         );
       })}
     </div>

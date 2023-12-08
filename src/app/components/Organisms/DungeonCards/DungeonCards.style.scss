@@ -13,7 +13,8 @@
   }
   &__container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 104px;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    gap: 24px;
   }
 }

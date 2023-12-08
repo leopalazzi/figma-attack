@@ -1,0 +1,57 @@
+.universe-card {
+  &__container {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    border-radius: 24px;
+    background: #fff;
+    width: 392px;
+  }
+
+  &__header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  &__badges-container{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__description {
+    color: #828282;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__button{
+    width: 100%;
+  }
+}
+
+
+div[class^="header_modal"], div[class*=' header_modal']{
+  display: none;
+}

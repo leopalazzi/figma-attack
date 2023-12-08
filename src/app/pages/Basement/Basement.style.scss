@@ -1,3 +1,15 @@
-.basement-universe-card{
-    min-width : 1084px;
+.basement {
+  &__universe-part {
+    margin-bottom: 56px;
+  }
+  &__universe-card {
+    min-width: 1084px;
+  }
+  &__title-with-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
 }

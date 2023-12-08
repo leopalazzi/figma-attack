@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import InlineFilters from '../../components/Molecules/InlineFilters/InlineFilters';
-import YoutubeVideos from '../../components/Molecules/YoutubeVideos/YoutubeVideos';
+import YoutubeVideos from '../../components/Organisms/YoutubeVideos/YoutubeVideos';
 import Layout from '../../components/Template/Layout/Layout';
 import { availableFilters, filtersType, knowledgesVideo } from '../../config/knowledges.config';
+import TitleWithDescription from '../../components/Molecules/TitleWithDescription/TitleWithDescription';
 
 const KnowledgeTemple = () => {
   const [filteredVideos, setFilteredVideos] = useState(knowledgesVideo);
@@ -23,10 +24,7 @@ const KnowledgeTemple = () => {
 
   return (
     <Layout>
-      <div>
-        <h1>Knowledge Temple</h1>
-        <span>Here, you can found a lot of ressources from awesome Designers</span>
-      </div>
+      <TitleWithDescription title="Knowledge Temple" description='Here, you can found a lot of ressources from awesome Designers' />
       <InlineFilters filters={availableFilters} setActiveFilter={setActiveFilter} activeFilter={activeFilter} />
       <YoutubeVideos videosData={filteredVideos} />
     </Layout>

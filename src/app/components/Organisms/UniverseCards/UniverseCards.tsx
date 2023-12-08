@@ -3,8 +3,9 @@ import './UniverseCards.style.scss';
 import HorizontalCard from '../HorizontalCard/HorizontalCard';
 import { FunctionComponent } from 'react';
 import { UniverseCardsProps } from './UniverseCards.model';
+import UniverseCard from '../UniverseCard/UniverseCard';
 
-const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type, cardCustomClassName }) => {
+const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type }) => {
   const { t } = useTranslation();
 
   return (
@@ -24,13 +25,12 @@ const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type,
           },
         ];
         return (
-          <HorizontalCard
+          <UniverseCard
             key={universe.code}
             title={universe.title}
             universCode={universe.code}
-            badgesData={badgesData}
-            activateClick={true}
-            customClassName={cardCustomClassName}
+            badges={badgesData}
+            description={universe.description}
           />
         );
       })}

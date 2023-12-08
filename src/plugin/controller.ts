@@ -1,4 +1,4 @@
-figma.showUI(__html__, { width: 1511, height: 863 });
+figma.showUI(__html__, { width: 1024, height: 860 });
 
 // figma.clientStorage
 //   .getAsync('size')

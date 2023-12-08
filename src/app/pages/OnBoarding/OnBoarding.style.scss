@@ -1,0 +1,32 @@
+.on-boarding{
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    &__logo{
+        margin-bottom: 32px;
+    }
+
+    &__text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 16px; 
+        margin-bottom: 48px;
+    }
+
+    &__title{
+        margin: 0;
+    }
+
+    &__description{
+        margin: 0;
+    }
+}
