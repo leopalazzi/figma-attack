@@ -11,7 +11,7 @@ const DescriptionStageCard = ({ title, description, steps }) => {
   const b = Bem('description-stage');
 
   return (
-    <div className={b('card')} id="stage-card">
+    <div className={b('card')}>
       <div className={b('text-head')}>
         <h4 className={b('title')}>{title}</h4>
         <p className={b('description')}>{description}</p>

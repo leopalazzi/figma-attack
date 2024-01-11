@@ -1,7 +1,7 @@
 .universe-cards-vertical{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 0;
     width: 100%;
 }
 
@@ -10,4 +10,12 @@
     grid-auto-flow: column;
     gap: 32px;
     overflow-x: auto;
+}
+
+.universe-container{
+    background-repeat: no-repeat;
+}
+
+.universe-1{
+    // background-image: url("../../../assets/home/universe-1.png");
 }

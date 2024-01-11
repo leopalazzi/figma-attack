@@ -7,10 +7,9 @@ const Home = () => {
   const { t } = useTranslation();
   const universes: Array<any> = t('universes', { returnObjects: true });
   return (
-    <Layout disableNavBar={true}>
-      <TitleWithDescription title={t("home.title")} description={t("home.description")} />
+    <div>
       <UniverseCards universes={universes} type="vertical" />
-    </Layout>
+    </div>
   );
 };
 

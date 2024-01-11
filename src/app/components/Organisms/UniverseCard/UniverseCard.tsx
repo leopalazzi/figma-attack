@@ -27,7 +27,7 @@ const UniverseCard = ({ title, description, badges, universCode }) => {
   }
 
   return (
-    <div className={b('container')}>
+    <div className={b('container')} style={{backgroundImage:""}}>
       <img src={getUniverseLogo()} />
       <div className={b("header")}>
       <h3 className={b('title')}>{title}</h3>

@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import Breadcrumb from '../../components/Molecules/Breadcrumb/Breadcrumb';
 import Layout from '../../components/Template/Layout/Layout';
 import StageCard from '../../components/Organisms/StageCard/StageCard';
-import HorizontalCard from '../../components/Organisms/HorizontalCard/HorizontalCard';
-import "./DungeonPage.style.scss";
+import TitleWithDescription from '../../components/Molecules/TitleWithDescription/TitleWithDescription';
+import TwoColumnsGrid from '../../components/Template/TwoColumnsGrid/TwoColumnsGrid';
 
 const DungeonPage = () => {
   const { t } = useTranslation();
@@ -32,27 +32,36 @@ const DungeonPage = () => {
           { url: `/universe/${universeCode}`, label: currentUniverse.title },
         ]}
       />
-      <HorizontalCard
-        title={currentDungeon.title}
-        badgesData={badgesData}
-        universCode={currentUniverse.code}
-        activateClick={false}
-        hideDiscoverLabel={true}
-        customClassName='dungeon-page-margin-bottom'
+      <TwoColumnsGrid>
+        <div>
+          <TitleWithDescription title={currentDungeon.title} description={currentDungeon.description}/>
+        </div>
+        {
+        /* <HorizontalCard
+          title={currentDungeon.title}
+          badgesData={badgesData}
+          universCode={currentUniverse.code}
+          activateClick={false}
+          hideDiscoverLabel={true}
+          customClassName='dungeon-page-margin-bottom'
 
-      />
-      {currentDungeon.stages.map((stage, index) => {
-        return (
-          <StageCard
-            stageNumberTitle={`${t('stageLabel')} ${index + 1}`}
-            title={stage.title}
-            universeCode={universeCode}
-            dungeonCode={code}
-            stageNumber={index + 1}
-            key={`stage-${index + 1}`}
-          />
-        );
-      })}
+        /> */
+        }
+        <div>
+        {currentDungeon.stages.map((stage, index) => {
+          return (
+            <StageCard
+              stageNumberTitle={`${t('stageLabel')} ${index + 1}`}
+              title={stage.title}
+              universeCode={universeCode}
+              dungeonCode={code}
+              stageNumber={index + 1}
+              key={`stage-${index + 1}`}
+            />
+          );
+        })}
+        </div>
+      </TwoColumnsGrid>
     </Layout>
   );
 };
