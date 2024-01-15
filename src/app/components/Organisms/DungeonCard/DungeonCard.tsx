@@ -5,7 +5,6 @@ import Bem from '../../../helpers/Bem';
 import './DungeonCard.style.scss';
 // @ts-ignore
 import neophyteNexusLogo  from "../../../assets/universes/logo_neophyte_nexus.png";
-// @ts-ignore
 
 
 
@@ -15,18 +14,18 @@ const DungeonCard = ({ title, description, universCode, dungeonCode }) => {
   const b = Bem('dungeon-card');
   const test = require("../../../assets/dungeons/1.png")
 
-  const onClick = () => {
-    navigate(`/universe/${universCode}`);
-  };
+  // const onClick = () => {
+  //   navigate(`/universe/${universCode}`);
+  // };
 
-  const getUniverseLogo = () => {
-    let universeLogo;
-    switch(universCode){
-      case 'neophyte_nexus':
-        universeLogo = neophyteNexusLogo;
-    }
-    return universeLogo;
-  }
+  // const getUniverseLogo = () => {
+  //   let universeLogo;
+  //   switch(universCode){
+  //     case 'neophyte_nexus':
+  //       universeLogo = neophyteNexusLogo;
+  //   }
+  //   return universeLogo;
+  // }
 
   const onClickVisit = () => {
     navigate(`/universe/${universCode}/dungeon/${dungeonCode}`);

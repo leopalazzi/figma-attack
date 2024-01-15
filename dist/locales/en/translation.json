@@ -1,485 +1,526 @@
 {
-  "dungeonsLabel": "Dungeons",
-  "universesLabel": "Universes",
-  "sideQuestsLabel": "Side Quests",
-  "stageLabel": "Stage",
-  "stepLabel": "Step",
-  "storyLabel": "Story",
-  "universeButtonLabel": "Discover Universe",
-  "dungeon" : {
-    "start": "Start Dungeon",
-    "visit": "Visit Dungeon"
-  },
-  "startStageLabel": "Start Stage",
-  "basementLabel" : "Basement",
-  "knowledgeLabel": "Knowledge",
-  "discoberLabel": "Discover",
-  "pasteStageLabel": "Paste Stage to Figma",
-  "checkHelpLabel": "Check Help",
-  "hideHelpLabel": "Hide Help",
-  "nextStageLabel": "Next Stage",
-  "basement" : {
-    "universes" : {
-      "title" : "Discover Universes",
-      "description" : "Universes are the point to start."
+    "dungeonsLabel": "Dungeons",
+    "universesLabel": "Universes",
+    "sideQuestsLabel": "Side Quests",
+    "stageLabel": "Stage",
+    "stepLabel": "Step",
+    "storyLabel": "Story",
+    "universeButtonLabel": "Discover Universe",
+    "dungeon": {
+        "start": "Start Dungeon",
+        "visit": "Visit Dungeon"
     },
-    "knowledgeTemple" : {
-      "title" : "Discover the Knowledge Temple",
-      "description" : "Curation of the best ressources for Designers."
-    }
-  },
-  "knowledgesFilter":{
-    "allVideos" : "All videos",
-    "advancedPrototyping": "Advanced Prototyping",
-    "autoLayout": "Auto Layout",
-    "variables" : "Variables",
-    "userResearch": "User Research"
-  },
-  "onboarding": {
-    "page_1": {
-      "title": "Welcome to FigmaAttack",
-      "description": "Your gateway to mastering Figma and excelling in the world of design! Our game-based learning plugin is designed to make your learning journey fun, interactive, and highly educational. In just a few steps, you'll be well on your way to becoming a Figma pro.",
-      "button_1": "Start Intro"
-    },
-    "page_2": {
-      "title": "Gamified Learn",
-      "description": "Your gateway to mastering Figma and excelling in the world of design! Our game-based learning plugin is designed to make your learning journey fun, interactive, and highly educational. In just a few steps, you'll be well on your way to becoming a Figma pro.",
-      "button_1": "Next",
-      "button_2": "Skip Intro"
-    },
-    "page_3": {
-      "title": "Build confidence",
-      "description": "Master Figma at your own pace, no pressure",
-      "button_1": "Start playing"
-    }
-  },
-  "universes": [
-    {
-      "code": "neophyte_nexus",
-      "title": "Neophyte Nexus",
-      "description" : "If you start with Figma, this Universe is made for you.",
-      "level": "Easy",
-      "numberSideQuests": "1 Side Quest",
-      "dungeons": [
-        {
-          "code": "the_begining",
-          "title": "The Begining",
-          "description": "Get ready to embark on a learning journey like no other.",
-          "imgUrl": "./test.png",
-          "numberStages": "27 Stages",
-          "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-          "stages": [
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                }
-              ]
-            },
-            {
-              "title": "Designing a Full website",
-              "description": "In this exercise, you will create a full website that is responsive."
-            },
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
-            }
-          ]
+    "startStageLabel": "Start Stage",
+    "basementLabel": "Basement",
+    "knowledgeLabel": "Knowledge",
+    "discoberLabel": "Discover",
+    "pasteStageLabel": "Paste Stage to Figma",
+    "checkHelpLabel": "Check Help",
+    "hideHelpLabel": "Hide Help",
+    "nextStageLabel": "Next Stage",
+    "basement": {
+        "universes": {
+            "title": "Discover Universes",
+            "description": "Universes are the point to start."
         },
-        {
-          "code": "the_begining",
-          "title": "The Begining",
-          "description": "Get ready to embark on a learning journey like no other.",
-          "imgUrl": "./test.png",
-          "numberStages": "27 Stages",
-          "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-          "stages": [
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images."
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "title": "Designing a Full website",
-              "description": "In this exercise, you will create a full website that is responsive.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images."
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images."
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "code": "the_begining",
-          "title": "The Begining",
-          "description": "Get ready to embark on a learning journey like no other.",
-          "imgUrl": "./test.png",
-          "numberStages": "27 Stages",
-          "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-          "stages": [
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images."
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "title": "Designing a Full website",
-              "description": "In this exercise, you will create a full website that is responsive."
-            },
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
-            }
-          ]
-        },
-        {
-          "code": "the_begining",
-          "title": "The Begining",
-          "description": "Get ready to embark on a learning journey like no other.",
-          "imgUrl": "./test.png",
-          "numberStages": "27 Stages",
-          "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-          "stages": [
-            {
-              "difficulty" : "hard",
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "difficulty" : "easy",
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "stageCard" : {
-                "title": "Story",
-                "description": "<ul><li>Use the Ctrl + / shortcut to bring up the shortcuts menu.</li></ul>"
-              },
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "title": "Designing a Full website",
-              "description": "In this exercise, you will create a full website that is responsive.",
-              "difficulty" : "easy",
-              "stageCard" : {
-                "title": "Story",
-                "description": "<ul><li>Use the Ctrl + / shortcut to bring up the shortcuts menu.</li></ul>"
-              }
-            },
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "difficulty" : "easy",
-              "stageCard" : {
-                "title": "Story",
-                "description": "<ul><li>Use the Ctrl + / shortcut to bring up the shortcuts menu.</li></ul>"
-              }
-            }
-          ]
+        "knowledgeTemple": {
+            "title": "Discover the Knowledge Temple",
+            "description": "Curation of the best ressources for Designers."
         }
-      ],
-      "side_quests": [
-        { 
-          "code": "the_begining_2", 
-          "title": "The Begining 2", 
-          "description": "Get ready boy!", 
-          "imgUrl": "./test.png" 
-      }
-      ]
     },
-    {
-      "code": "craftman_crossing",
-      "title": "Craftman's Crossing",
-      "description" : "If you start with Figma, this Universe is made for you.",
-      "level": "Medium",
-      "numberSideQuests": "1 Side Quest",
-      "dungeons": [
-        {
-          "code": "the_begining",
-          "title": "The Begining",
-          "description": "Get ready to embark on a learning journey like no other.",
-          "imgUrl": "./test.png",
-          "numberStages": "27 Stages",
-          "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-          "stages": [
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                }
-              ]
-            },
-            {
-              "title": "Designing a Full website",
-              "description": "In this exercise, you will create a full website that is responsive."
-            },
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
+    "knowledgesFilter": {
+        "allVideos": "All videos",
+        "advancedPrototyping": "Advanced Prototyping",
+        "autoLayout": "Auto Layout",
+        "variables": "Variables",
+        "userResearch": "User Research"
+    },
+    "onboarding": {
+        "page_1": {
+            "title": "Welcome to FigmaAttack",
+            "description": "Your gateway to mastering Figma and excelling in the world of design! Our game-based learning plugin is designed to make your learning journey fun, interactive, and highly educational. In just a few steps, you'll be well on your way to becoming a Figma pro.",
+            "button_1": "Start Intro",
+            "quiz": {
+                "title": "How comfortable are you with Figma's basic tools and interface?",
+                "answers": [
+                    { "label": "Not comfortable at all", "value": "not_comfortable" },
+                    { "label": "Somewhat comfortable", "value": "somewhat_comfortable" },
+                    { "label": "Very comfortable", "value": "Very comfortable"}
+                ]
             }
-          ]
         },
-        {
-          "code": "the_begining",
-          "title": "The Begining",
-          "description": "Get ready to embark on a learning journey like no other.",
-          "imgUrl": "./test.png",
-          "numberStages": "27 Stages",
-          "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-          "stages": [
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images."
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "title": "Designing a Full website",
-              "description": "In this exercise, you will create a full website that is responsive.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images."
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images."
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            }
-          ]
+        "page_2": {
+            "title": "Gamified Learn",
+            "description": "Your gateway to mastering Figma and excelling in the world of design! Our game-based learning plugin is designed to make your learning journey fun, interactive, and highly educational. In just a few steps, you'll be well on your way to becoming a Figma pro.",
+            "button_1": "Next",
+            "button_2": "Skip Intro"
         },
-        {
-          "code": "the_begining",
-          "title": "The Begining",
-          "description": "Get ready to embark on a learning journey like no other.",
-          "imgUrl": "./test.png",
-          "numberStages": "27 Stages",
-          "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-          "stages": [
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images."
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "title": "Designing a Full website",
-              "description": "In this exercise, you will create a full website that is responsive."
-            },
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
-            }
-          ]
-        },
-        {
-          "code": "the_begining",
-          "title": "The Begining",
-          "description": "Get ready to embark on a learning journey like no other.",
-          "imgUrl": "./test.png",
-          "numberStages": "27 Stages",
-          "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-          "stages": [
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-              "steps": [
-                {
-                  "title" : "Dynamic Pricing and Product Customization",
-                  "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-                },
-                {
-                  "title": "Interactive Product Exploration",
-                  "description" : "Develop interactive components that allow users to explore product details and view multiple images.",
-                  "helps": ["Define pricing variables: Set up variables for product prices and options (e.g., size, color).", "Create product variants: Design product cards with variants reflecting different pricing options and attributes."]
-
-                },
-                {
-                  "title": "Dynamic Pricing and Product Customization",
-                  "description" : "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                }
-              ]
-            },
-            {
-              "title": "Designing a Full website",
-              "description": "In this exercise, you will create a full website that is responsive."
-            },
-            {
-              "title": "Designing a Multi-Platform Social Media Management Interface",
-              "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
-            }
-          ]
+        "page_3": {
+            "title": "Build confidence",
+            "description": "Master Figma at your own pace, no pressure",
+            "button_1": "Start playing"
         }
-      ],
-      "side_quests": [
-        { 
-          "code": "the_begining_2", 
-          "title": "The Begining 2", 
-          "description": "Get ready boy!", 
-          "imgUrl": "./test.png" 
-      }
-      ]
-    }
-  ]
+    },
+    "universes": [
+        {
+            "code": "neophyte_nexus",
+            "title": "Neophyte Nexus",
+            "description": "If you start with Figma, this Universe is made for you.",
+            "level": "Easy",
+            "numberSideQuests": "1 Side Quest",
+            "dungeons": [
+                {
+                    "code": "the_begining",
+                    "title": "The Begining",
+                    "description": "Get ready to embark on a learning journey like no other.",
+                    "imgUrl": "./test.png",
+                    "numberStages": "27 Stages",
+                    "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
+                    "stages": [
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Full website",
+                            "description": "In this exercise, you will create a full website that is responsive."
+                        },
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
+                        }
+                    ]
+                },
+                {
+                    "code": "the_begining",
+                    "title": "The Begining",
+                    "description": "Get ready to embark on a learning journey like no other.",
+                    "imgUrl": "./test.png",
+                    "numberStages": "27 Stages",
+                    "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
+                    "stages": [
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Full website",
+                            "description": "In this exercise, you will create a full website that is responsive.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code": "the_begining",
+                    "title": "The Begining",
+                    "description": "Get ready to embark on a learning journey like no other.",
+                    "imgUrl": "./test.png",
+                    "numberStages": "27 Stages",
+                    "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
+                    "stages": [
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Full website",
+                            "description": "In this exercise, you will create a full website that is responsive."
+                        },
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
+                        }
+                    ]
+                },
+                {
+                    "code": "the_begining",
+                    "title": "The Begining",
+                    "description": "Get ready to embark on a learning journey like no other.",
+                    "imgUrl": "./test.png",
+                    "numberStages": "27 Stages",
+                    "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
+                    "stages": [
+                        {
+                            "difficulty": "hard",
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "difficulty": "easy",
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "stageCard": {
+                                "title": "Story",
+                                "description": "<ul><li>Use the Ctrl + / shortcut to bring up the shortcuts menu.</li></ul>"
+                            },
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Full website",
+                            "description": "In this exercise, you will create a full website that is responsive.",
+                            "difficulty": "easy",
+                            "stageCard": {
+                                "title": "Story",
+                                "description": "<ul><li>Use the Ctrl + / shortcut to bring up the shortcuts menu.</li></ul>"
+                            }
+                        },
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "difficulty": "easy",
+                            "stageCard": {
+                                "title": "Story",
+                                "description": "<ul><li>Use the Ctrl + / shortcut to bring up the shortcuts menu.</li></ul>"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "side_quests": [
+                {
+                    "code": "the_begining_2",
+                    "title": "The Begining 2",
+                    "description": "Get ready boy!",
+                    "imgUrl": "./test.png"
+                }
+            ]
+        },
+        {
+            "code": "craftman_crossing",
+            "title": "Craftman's Crossing",
+            "description": "If you start with Figma, this Universe is made for you.",
+            "level": "Medium",
+            "numberSideQuests": "1 Side Quest",
+            "dungeons": [
+                {
+                    "code": "the_begining",
+                    "title": "The Begining",
+                    "description": "Get ready to embark on a learning journey like no other.",
+                    "imgUrl": "./test.png",
+                    "numberStages": "27 Stages",
+                    "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
+                    "stages": [
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Full website",
+                            "description": "In this exercise, you will create a full website that is responsive."
+                        },
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
+                        }
+                    ]
+                },
+                {
+                    "code": "the_begining",
+                    "title": "The Begining",
+                    "description": "Get ready to embark on a learning journey like no other.",
+                    "imgUrl": "./test.png",
+                    "numberStages": "27 Stages",
+                    "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
+                    "stages": [
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Full website",
+                            "description": "In this exercise, you will create a full website that is responsive.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code": "the_begining",
+                    "title": "The Begining",
+                    "description": "Get ready to embark on a learning journey like no other.",
+                    "imgUrl": "./test.png",
+                    "numberStages": "27 Stages",
+                    "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
+                    "stages": [
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Full website",
+                            "description": "In this exercise, you will create a full website that is responsive."
+                        },
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
+                        }
+                    ]
+                },
+                {
+                    "code": "the_begining",
+                    "title": "The Begining",
+                    "description": "Get ready to embark on a learning journey like no other.",
+                    "imgUrl": "./test.png",
+                    "numberStages": "27 Stages",
+                    "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
+                    "stages": [
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
+                            "steps": [
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Interactive Product Exploration",
+                                    "description": "Develop interactive components that allow users to explore product details and view multiple images.",
+                                    "helps": [
+                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
+                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
+                                    ]
+                                },
+                                {
+                                    "title": "Dynamic Pricing and Product Customization",
+                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Designing a Full website",
+                            "description": "In this exercise, you will create a full website that is responsive."
+                        },
+                        {
+                            "title": "Designing a Multi-Platform Social Media Management Interface",
+                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
+                        }
+                    ]
+                }
+            ],
+            "side_quests": [
+                {
+                    "code": "the_begining_2",
+                    "title": "The Begining 2",
+                    "description": "Get ready boy!",
+                    "imgUrl": "./test.png"
+                }
+            ]
+        }
+    ]
 }

@@ -4,14 +4,12 @@ import { useTranslation } from "react-i18next";
 import { useLocation, useParams } from "react-router-dom";
 import Breadcrumb from "../../components/Molecules/Breadcrumb/Breadcrumb";
 import Layout from "../../components/Template/Layout/Layout";
-import DescriptionStageCard from "../../components/Organisms/DescriptionStageCard/DescriptionStageCard";
 import domtoimage from "dom-to-image";
 import StageButtons from "../../components/Molecules/StageButtons/StageButtons";
 import NextStage from "../../components/Molecules/NextStage/NextStage";
 import { useEffect } from "react";
 import TwoColumnsGrid from "../../components/Template/TwoColumnsGrid/TwoColumnsGrid";
 import StageDescriptionCard from "../../components/Organisms/StageDescriptionCard/StageDescriptionCard";
-import StepCard from "../../components/Organisms/StepCard/StepCard";
 import StepCards from "../../components/Organisms/StepCards/StepCards";
 
 const StagePage = () => {

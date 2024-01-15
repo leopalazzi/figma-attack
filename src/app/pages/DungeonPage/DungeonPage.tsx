@@ -17,12 +17,12 @@ const DungeonPage = () => {
     }
   });
 
-  const badgesData = [
-    {
-      universe: currentUniverse.code,
-      label: `${currentDungeon.stages.length} ${t('stageLabel')}s`,
-    },
-  ];
+  // const badgesData = [
+  //   {
+  //     universe: currentUniverse.code,
+  //     label: `${currentDungeon.stages.length} ${t('stageLabel')}s`,
+  //   },
+  // ];
 
   return (
     <Layout>

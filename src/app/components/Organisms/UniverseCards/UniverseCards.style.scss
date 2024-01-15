@@ -14,8 +14,10 @@
 
 .universe-container{
     background-repeat: no-repeat;
-}
-
-.universe-1{
-    // background-image: url("../../../assets/home/universe-1.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 620px;
+    padding-left: 40px;
+    align-items: center;
+    display: grid;
 }

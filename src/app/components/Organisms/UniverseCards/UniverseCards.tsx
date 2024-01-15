@@ -2,7 +2,6 @@
 
 import { useTranslation } from "react-i18next";
 import "./UniverseCards.style.scss";
-import HorizontalCard from "../HorizontalCard/HorizontalCard";
 import { FunctionComponent } from "react";
 import { UniverseCardsProps } from "./UniverseCards.model";
 import UniverseCard from "../UniverseCard/UniverseCard";
@@ -30,10 +29,6 @@ const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type 
                 return (
                     <div
                         style={{
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                            backgroundRepeat: "no-repeat",
-                            minHeight: "620px", // Set the minimum height to 100% of the parent
                             backgroundImage: `url(${universeImg})`,
                         }}
                         className="universe-container"
