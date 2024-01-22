@@ -12,19 +12,24 @@ const StageDescriptionCard = ({ title, description }) => {
 
     const exportToPng = () => {
         const currentStage = document.getElementById("stage-card");
+        const stepCards = document.getElementById("step-cards");
+        stepCards.style.overflow = 'visible';
         domtoimage
             .toPng(currentStage, { quality: 0.99 })
             .then((dataUrl) => {
+                stepCards.style.overflow = 'scroll';
                 const binary_string = window.atob(dataUrl.replace("data:image/png;base64,", ""));
                 const len = binary_string.length;
                 const bytes = new Uint8Array(len);
                 for (var i = 0; i < len; i++) {
                     bytes[i] = binary_string.charCodeAt(i);
                 }
-                const t = new Uint8Array(bytes.buffer);
-                parent.postMessage({ pluginMessage: { type: "paste-stage", imageData: t } }, "*");
+                const buffer = new Uint8Array(bytes.buffer);
+                parent.postMessage({ pluginMessage: { type: "paste-stage", imageData: buffer } }, "*");
+
             })
             .catch(function (error) {
+                stepCards.style.overflow = 'scroll';
                 console.error("oops, something went wrong!", error);
             });
     };

@@ -5,7 +5,7 @@ import Bem from '../../../helpers/Bem';
 import './UniverseCard.style.scss';
 import Badge from '../../Atoms/Badge/Badge';
 // @ts-ignore
-import neophyteNexusLogo  from "../../../assets/universes/logo_neophyte_nexus.png";
+import neophyteNexusLogo  from "../../../assets/universes/logo_neophyte_nexus.svg";
 
 const UniverseCard = ({ title, description, badges, universCode }) => {
   const { t } = useTranslation();

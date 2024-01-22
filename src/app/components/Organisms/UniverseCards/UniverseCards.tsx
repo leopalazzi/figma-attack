@@ -32,6 +32,7 @@ const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type 
                             backgroundImage: `url(${universeImg})`,
                         }}
                         className="universe-container"
+                        key={universe.code}
                     >
                         <UniverseCard
                             key={universe.code}

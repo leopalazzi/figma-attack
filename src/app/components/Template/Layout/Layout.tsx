@@ -3,12 +3,12 @@ import './Layout.style.scss';
 import { LayoutProps } from './Layout.model';
 import Header from '../../Molecules/Header/Header';
 
-const Layout = ({ children } : LayoutProps) => {
+const Layout = ({ children, containerProps } : LayoutProps) => {
 
   return (
     <div>
        <Header/>
-      <div className="layout">{children}</div>
+      <div className="layout" {...containerProps}>{children}</div>
       <NavBar/>
     </div>
   );

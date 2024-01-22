@@ -16,6 +16,7 @@ const Quiz = ({ title, answers }) => {
 
     const checkAnswer = () => {
         if (selectedAnswer === "paris") {
+            console.log(result)
             setResult("Correct! Paris is the capital of France.");
         } else {
             setResult("Incorrect. Try again!");
@@ -24,19 +25,17 @@ const Quiz = ({ title, answers }) => {
 
     return (
         <div className={b("container")}>
-          <div>
             <h2 className={b("title")}>{title}</h2>
             <div className={b("answers-container")}>
-                {answers.map((answer) => {
+                {answers.map((answer, i) => {
                     return (
-                        <label className={b("label")} >
+                        <label className={b("label")} key={`answer-${i}`} >
                             <input
                                 className={b("radio-button")}
                                 type="radio"
                                 name="answer"
                                 value={answer.value}
                                 tabIndex={0}
-                                // checked={selectedAnswer === answer.value}
                                 onChange={handleAnswerChange}
                             />
                             {answer.label}
@@ -48,7 +47,6 @@ const Quiz = ({ title, answers }) => {
                     onClick={checkAnswer}
                     label="Submit"
                 />
-            </form>
         </div>
     );
 };

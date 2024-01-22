@@ -8,7 +8,7 @@ const StepCards = ({ steps }) => {
     const b = Bem("step-cards");
 
     return (
-        <div className={b("container")}>
+        <div className={b("container")} id="step-cards">
             {steps?.map((step, index) => {
                 return (
                     <StepCard

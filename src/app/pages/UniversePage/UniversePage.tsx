@@ -2,12 +2,10 @@
 
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
-import Breadcrumb from "../../components/Molecules/Breadcrumb/Breadcrumb";
-import Layout from "../../components/Template/Layout/Layout";
 import DungeonCards from "../../components/Organisms/DungeonCards/DungeonCards";
 import "./UniversePage.style.scss";
-import TitleWithDescription from "../../components/Molecules/TitleWithDescription/TitleWithDescription";
-import Badges from "../../components/Molecules/Badges/Badges";
+import Layout from "../../components/Template/Layout/Layout";
+import UniverseHeading from "../../components/Molecules/UniverseHeading/UniverseHeading";
 
 const UniversePage = () => {
     const { t } = useTranslation();
@@ -29,16 +27,24 @@ const UniversePage = () => {
         },
     ];
 
+    const universeImg = require(`../../assets/universePage/background_${currentUniverse.code}.png`)?.default;
+
     return (
-        <Layout>
-            <Breadcrumb linksData={[{ url: "/home", label: t("universesLabel") }]} />
-            <div>
-                <TitleWithDescription
-                    title={currentUniverse.title}
-                    description={currentUniverse.description}
-                />
-                <Badges badgesData={badgesData} />
-            </div>
+        <Layout
+            containerProps={{
+                style: {
+                    backgroundImage: `url(${universeImg})`,
+                    height: `calc(100% - 104px)`,
+                    paddingLeft: "40px"
+                },
+            }}
+        >
+            <UniverseHeading
+                currentUniverse={currentUniverse}
+                currentDungeons={currentDungeons}
+                badgesData={badgesData}
+                customProps={{ style: { marginBottom: "40px" } }}
+            />
             <DungeonCards
                 dungeons={currentDungeons}
                 universCode={code}
