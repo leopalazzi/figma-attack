@@ -4,4 +4,5 @@ export type LayoutProps = {
     disableNavBar?: Boolean;
     children: ReactNode;
     containerProps?: any;
+    breadcrumbLinks?: any;
 };

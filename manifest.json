@@ -4,11 +4,12 @@
   "api": "1.0.0",
   "main": "dist/code.js",
   "ui": "dist/ui.html",
-  "capabilities": [],
+  "capabilities": ["inspect", "vscode"],
   "enableProposedApi": false,
   "editorType": [
     "figma",
-    "figjam"
+    "figjam",
+    "dev"
   ],
   "networkAccess": {
     "allowedDomains": [

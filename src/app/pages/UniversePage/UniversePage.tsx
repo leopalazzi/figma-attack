@@ -29,27 +29,32 @@ const UniversePage = () => {
 
     const universeImg = require(`../../assets/universePage/background_${currentUniverse.code}.png`)?.default;
 
+    const breadcrumbLinks = [
+        { url: "/home", label: t("breadcrumb.allUniverses") },
+        { url: `/universe/${currentUniverse.code}`, label: currentUniverse.title, current: true },
+    ];
     return (
-        <Layout
-            containerProps={{
-                style: {
-                    backgroundImage: `url(${universeImg})`,
-                    height: `calc(100% - 104px)`,
-                    paddingLeft: "40px"
-                },
-            }}
-        >
-            <UniverseHeading
-                currentUniverse={currentUniverse}
-                currentDungeons={currentDungeons}
-                badgesData={badgesData}
-                customProps={{ style: { marginBottom: "40px" } }}
-            />
-            <DungeonCards
-                dungeons={currentDungeons}
-                universCode={code}
-            />
-        </Layout>
+            <Layout
+                containerProps={{
+                    style: {
+                        backgroundImage: `url(${universeImg})`,
+                        height: `calc(100% - 104px)`,
+                        paddingLeft: "40px",
+                    },
+                }}
+                breadcrumbLinks={breadcrumbLinks}
+            >
+                <UniverseHeading
+                    currentUniverse={currentUniverse}
+                    currentDungeons={currentDungeons}
+                    badgesData={badgesData}
+                    customProps={{ style: { marginBottom: "40px" } }}
+                />
+                <DungeonCards
+                    dungeons={currentDungeons}
+                    universCode={code}
+                />
+            </Layout>
     );
 };
 

@@ -21,7 +21,7 @@ const StageDescriptionCard = ({ title, description }) => {
                 const binary_string = window.atob(dataUrl.replace("data:image/png;base64,", ""));
                 const len = binary_string.length;
                 const bytes = new Uint8Array(len);
-                for (var i = 0; i < len; i++) {
+                for (let i = 0; i < len; i++) {
                     bytes[i] = binary_string.charCodeAt(i);
                 }
                 const buffer = new Uint8Array(bytes.buffer);

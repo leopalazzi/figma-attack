@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import UniverseCards from '../../components/Organisms/UniverseCards/UniverseCards';
 import Quiz from '../../components/Molecules/Quiz/Quiz';
 import Universe1 from '../../icons/Universes/Universe1';
+import TimeBox from '../../components/Molecules/TimeBox/TimeBox';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -10,6 +11,7 @@ const Home = () => {
 
   return (
     <div>
+      <TimeBox/>
       <Quiz title="test" answers={onBoarding["page_1"].quiz.answers}/>
       <Universe1/>
       <UniverseCards universes={universes} type="vertical" />

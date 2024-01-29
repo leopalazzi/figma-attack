@@ -19,6 +19,9 @@
     "checkHelpLabel": "Check Help",
     "hideHelpLabel": "Hide Help",
     "nextStageLabel": "Next Stage",
+    "breadcrumb": {
+        "allUniverses": "All Universes"
+    },
     "basement": {
         "universes": {
             "title": "Discover Universes",

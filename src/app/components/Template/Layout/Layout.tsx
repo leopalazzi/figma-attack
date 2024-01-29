@@ -1,17 +1,25 @@
-import NavBar from '../../Organisms/NavBar/NavBar';
-import './Layout.style.scss';
-import { LayoutProps } from './Layout.model';
-import Header from '../../Molecules/Header/Header';
+/** @format */
 
-const Layout = ({ children, containerProps } : LayoutProps) => {
+import NavBar from "../../Organisms/NavBar/NavBar";
+import "./Layout.style.scss";
+import { LayoutProps } from "./Layout.model";
+import Header from "../../Molecules/Header/Header";
+import Breadcrumb from "../../Molecules/Breadcrumb/Breadcrumb";
 
-  return (
-    <div>
-       <Header/>
-      <div className="layout" {...containerProps}>{children}</div>
-      <NavBar/>
-    </div>
-  );
+const Layout = ({ children, breadcrumbLinks, containerProps }: LayoutProps) => {
+    return (
+        <div>
+            <Header />
+            {breadcrumbLinks?.length > 0 && <Breadcrumb linksData={breadcrumbLinks} />}
+            <div
+                className="layout"
+                {...containerProps}
+            >
+                {children}
+            </div>
+            <NavBar />
+        </div>
+    );
 };
 
 export default Layout;
