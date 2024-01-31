@@ -10,7 +10,7 @@ import DungeonPage from './pages/DungeonPage/DungeonPage';
 import StagePage from './pages/StagePage/StagePage';
 import KnowledgeTemple from './pages/KnowledgeTemple/KnowledgeTemple';
 import Basement from './pages/Basement/Basement';
-// import { useState } from 'react';
+
 export const CtxApp = () => {
   const [activePage, setActivePage] = useState('universes');
   return (
