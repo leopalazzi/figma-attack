@@ -4,3 +4,17 @@
     gap: 40px;
     padding: 40px;
 }
+
+.stage-description-container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: inherit;
+
+}
+
+.stage-page-two-columns{
+    max-height: 450px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}

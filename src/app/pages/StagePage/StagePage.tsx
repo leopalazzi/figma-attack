@@ -2,7 +2,6 @@
 
 import { useTranslation } from "react-i18next";
 import { useLocation, useParams } from "react-router-dom";
-import Breadcrumb from "../../components/Molecules/Breadcrumb/Breadcrumb";
 import NextStage from "../../components/Molecules/NextStage/NextStage";
 import { useEffect } from "react";
 import TwoColumnsGrid from "../../components/Template/TwoColumnsGrid/TwoColumnsGrid";
@@ -10,6 +9,7 @@ import StageDescriptionCard from "../../components/Organisms/StageDescriptionCar
 import StepCards from "../../components/Organisms/StepCards/StepCards";
 import TipsCard from "../../components/Molecules/TipsCard/TpsCard";
 import "./StagePage.style.scss";
+import Layout from "../../components/Template/Layout/Layout";
 
 const StagePage = () => {
     const { t } = useTranslation();
@@ -34,7 +34,7 @@ const StagePage = () => {
 
     const getCurrentStage = () => {
         let stageComponent = <></>;
-        switch(currentStage.type){
+        switch (currentStage.type) {
             case "tips":
                 stageComponent = currentStage.tips?.length > 0 ? <TipsCard tips={currentStage.tips} /> : <></>;
                 break;
@@ -45,25 +45,36 @@ const StagePage = () => {
                 break;
         }
         return stageComponent;
-    }
+    };
+    const universeImg = require(`../../assets/universes/background_${currentUniverse.code}.png`)?.default;
 
     return (
-        <div className="stage-page-container">
-            <Breadcrumb
-                linksData={[
-                    { url: "/home", label: t("universesLabel") },
-                    { url: universeBaseUrl, label: currentUniverse.title },
-                    { url: dungeonBaseUrl, label: currentDungeon.title },
-                ]}
-            />
-            <TwoColumnsGrid id="stage-card">
-                <StageDescriptionCard
-                    title={currentStage.title}
-                    description={currentStage.description}
-                />
-                {
-                  getCurrentStage()
-                }
+        <Layout
+            breadcrumbLinks={[
+                { url: "/home", label: t("universesLabel") },
+                { url: universeBaseUrl, label: currentUniverse.title },
+                { url: dungeonBaseUrl, label: currentDungeon.title },
+            ]}
+            containerProps={{
+                style: {
+                    backgroundImage: `url(${universeImg})`,
+                    height: `612px`,
+                    // height:"300px",
+                    padding: "40px",
+                },
+            }}
+        >
+            <TwoColumnsGrid
+                id="stage-card"
+                customClassName="stage-page-two-columns"
+            >
+                <div className="stage-description-container">
+                    <StageDescriptionCard
+                        title={currentStage.title}
+                        description={currentStage.description}
+                    />
+                </div>
+                {getCurrentStage()}
                 {/* <StepCards steps={currentStage.steps} /> */}
             </TwoColumnsGrid>
             {currentStage.difficulty === "hard" && <div></div>}
@@ -78,7 +89,7 @@ const StagePage = () => {
                     url={`${dungeonBaseUrl}/stage/${(Number(stageNumber) + 1).toString()}`}
                 />
             )}
-        </div>
+        </Layout>
     );
 };
 

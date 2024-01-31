@@ -27,7 +27,7 @@ const UniversePage = () => {
         },
     ];
 
-    const universeImg = require(`../../assets/universePage/background_${currentUniverse.code}.png`)?.default;
+    const universeImg = require(`../../assets/universes/background_${currentUniverse.code}.png`)?.default;
 
     const breadcrumbLinks = [
         { url: "/home", label: t("breadcrumb.allUniverses") },
@@ -38,7 +38,7 @@ const UniversePage = () => {
                 containerProps={{
                     style: {
                         backgroundImage: `url(${universeImg})`,
-                        height: `calc(100% - 104px)`,
+                        height: `calc(100% - 208px)`,
                         paddingLeft: "40px",
                     },
                 }}

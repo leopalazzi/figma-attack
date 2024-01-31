@@ -6,7 +6,8 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        max-height: 585px;
         overflow-y: scroll;
+        max-height: inherit;
+        border-radius: 16px;
     }
 }

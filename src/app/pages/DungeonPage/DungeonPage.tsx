@@ -18,17 +18,12 @@ const DungeonPage = () => {
         }
     });
 
-    // const badgesData = [
-    //   {
-    //     universe: currentUniverse.code,
-    //     label: `${currentDungeon.stages.length} ${t('stageLabel')}s`,
-    //   },
-    // ];
     const breadcrumbLinks = [
         { url: "/home", label: t("universesLabel") },
         { url: `/universe/${universeCode}`, label: currentUniverse.title },
         { url: `/universe/${universeCode}/dungeon/${code}`, label: currentDungeon.title, current: true },
     ];
+    
     return (
         <Layout breadcrumbLinks={breadcrumbLinks}>
             <TwoColumnsGrid>

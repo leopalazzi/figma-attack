@@ -1,10 +1,10 @@
 import './TwoColumnsGrid.style.scss';
 import { TwoColumnsGridProps } from './TwoColumnsGrid.model';
 
-const TwoColumnsGrid = ({ children, id } : TwoColumnsGridProps) => {
+const TwoColumnsGrid = ({ children, id, customClassName } : TwoColumnsGridProps) => {
 
   return (
-    <div className="twoColumns" id={id}>
+    <div className={`twoColumns ${customClassName ? customClassName : ""}`} id={id}>
       {children}
     </div>
   );
