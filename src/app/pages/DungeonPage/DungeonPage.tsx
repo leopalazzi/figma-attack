@@ -6,6 +6,7 @@ import Layout from "../../components/Template/Layout/Layout";
 import TwoColumnsGrid from "../../components/Template/TwoColumnsGrid/TwoColumnsGrid";
 import StagesCard from "../../components/Organisms/StagesCard/StagesCard";
 import VerticalDungeonInfos from "../../components/Organisms/VerticalDungeonInfos/VerticalDungeonInfos";
+import "./DungeonPage.style.scss";
 
 const DungeonPage = () => {
     const { t } = useTranslation();
@@ -23,11 +24,21 @@ const DungeonPage = () => {
         { url: `/universe/${universeCode}`, label: currentUniverse.title },
         { url: `/universe/${universeCode}/dungeon/${code}`, label: currentDungeon.title, current: true },
     ];
-    
+
     return (
-        <Layout breadcrumbLinks={breadcrumbLinks}>
-            <TwoColumnsGrid>
-                <VerticalDungeonInfos currentDungeon={currentDungeon} universeCode={universeCode}/>
+        <Layout
+            breadcrumbLinks={breadcrumbLinks}
+            containerProps={{
+                style: {
+                    padding: "40px 40px 0 40px",
+                },
+            }}
+        >
+            <TwoColumnsGrid customClassName="dungeon-page-two-columns">
+                <VerticalDungeonInfos
+                    currentDungeon={currentDungeon}
+                    universeCode={universeCode}
+                />
                 <StagesCard
                     stages={currentDungeon.stages}
                     universeCode={currentUniverse.code}
