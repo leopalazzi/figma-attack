@@ -39,7 +39,7 @@ const UniversePage = () => {
                     style: {
                         backgroundImage: `url(${universeImg})`,
                         height: `calc(100% - 208px)`,
-                        paddingLeft: "40px",
+                        padding: "40px 0 0 40px",
                     },
                 }}
                 breadcrumbLinks={breadcrumbLinks}

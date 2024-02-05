@@ -8,10 +8,14 @@
 .stage-description-container{
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    max-height: inherit;
-
+    overflow-y: hidden;
 }
+
+@media (min-height: 450px) {
+    .stage-description-container {
+      overflow-y: auto;
+    }
+  }
 
 .stage-page-two-columns{
     max-height: 450px;
