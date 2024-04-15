@@ -1,0 +1,25 @@
+/** @format */
+
+.score-card {
+    &__description {
+        color: #1f1f1f;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &__result {
+        color: #d92d20;
+        font-size: 40px;
+        font-weight: 600;
+
+        &--success{
+            color: #039855;
+        }
+    }
+
+    &__buttons-block{
+        display: flex;
+        gap: 24px;
+    }
+}

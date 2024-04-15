@@ -6,6 +6,10 @@ import './UniverseCard.style.scss';
 import Badge from '../../Atoms/Badge/Badge';
 // @ts-ignore
 import neophyteNexusLogo  from "../../../assets/universes/logo_neophyte_nexus.svg";
+// @ts-ignore
+import craftmenCrossingLogo  from "../../../assets/universes/logo_craftmen_crossing.svg";
+// @ts-ignore
+import masterMetropolisLogo  from "../../../assets/universes/logo_master_metropolis.svg";
 
 const UniverseCard = ({ title, description, badges, universCode }) => {
   const { t } = useTranslation();
@@ -21,6 +25,13 @@ const UniverseCard = ({ title, description, badges, universCode }) => {
     switch(universCode){
       case 'neophyte_nexus':
         universeLogo = neophyteNexusLogo;
+        break;
+      case 'craftmen_crossing':
+        universeLogo = craftmenCrossingLogo;
+        break;
+      case 'master_metropolis':
+        universeLogo = masterMetropolisLogo;
+        break;
     }
     return universeLogo;
 

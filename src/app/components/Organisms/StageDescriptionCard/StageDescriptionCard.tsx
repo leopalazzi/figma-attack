@@ -13,11 +13,16 @@ const StageDescriptionCard = ({ title, description }) => {
     const exportToPng = () => {
         const currentStage = document.getElementById("stage-card");
         const stepCards = document.getElementById("step-cards");
-        stepCards.style.overflow = 'visible';
+        const overflowStage = document.getElementById("overflow-stage");
+        stepCards.style.setProperty('overflow', 'visible');
+        overflowStage.style.setProperty('overflow', 'visible');
+        currentStage.style.setProperty('overflow', 'visible');
         domtoimage
             .toPng(currentStage, { quality: 0.99 })
             .then((dataUrl) => {
-                stepCards.style.overflow = 'scroll';
+                stepCards.style.removeProperty("overflow");
+                overflowStage.style.removeProperty("overflow");
+                currentStage.style.removeProperty("overflow");
                 const binary_string = window.atob(dataUrl.replace("data:image/png;base64,", ""));
                 const len = binary_string.length;
                 const bytes = new Uint8Array(len);

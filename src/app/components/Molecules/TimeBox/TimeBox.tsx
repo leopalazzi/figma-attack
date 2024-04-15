@@ -96,7 +96,7 @@ const TimeBox = () => {
         <div className={b("container")}>
             <div className={b("time-container")}>
                 {renderIcon()}
-                <div className={b("loader", { running: isRunning && time !== 0 })}>
+                <div className={b("loader", { running: isRunning && time !== 0, ended: time === 0 })}>
                     <span className={b("time")}>{formatTime(time)}</span>
                 </div>
             </div>

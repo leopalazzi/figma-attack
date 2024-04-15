@@ -6,9 +6,9 @@ import { LayoutProps } from "./Layout.model";
 import Header from "../../Molecules/Header/Header";
 import Breadcrumb from "../../Molecules/Breadcrumb/Breadcrumb";
 
-const Layout = ({ children, breadcrumbLinks, containerProps }: LayoutProps) => {
+const Layout = ({ children, breadcrumbLinks, containerProps, key }: LayoutProps) => {
     return (
-        <div>
+        <div key={key}>
             <Header />
             {breadcrumbLinks?.length > 0 && <Breadcrumb linksData={breadcrumbLinks} />}
             <div

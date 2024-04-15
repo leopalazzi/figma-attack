@@ -1,8 +1,8 @@
 export const onBoardingbuttonsConfig = {
-  page_1: (t, navigate) => {
+  step_1: (t, navigate) => {
     const button = [
       {
-        label: t('onboarding.page_1.button_1'),
+        label: t('onboarding.step_1.button_1'),
         onClick: () => {
           navigate('/onboarding/2');
         },
@@ -10,28 +10,20 @@ export const onBoardingbuttonsConfig = {
     ];
     return button;
   },
-  page_2: (t, navigate) => {
+  step_2: (t, navigate) => {
     const buttons = [
       {
-        label: t('onboarding.page_2.button_1'),
+        label: t('onboarding.step_2.button_1'),
         onClick: () => {
           navigate('/onboarding/3');
         },
-      },
-      {
-        label: t('onboarding.page_2.button_2'),
-        onClick: () => {
-          parent.postMessage({ pluginMessage: { type: 'onboarding-done'} }, '*');
-          navigate('/home');
-        },
-        outline: true
-      },
+      }
     ];
     return buttons;
   },
-  page_3: (t,navigate) => {
+  step_3: (t,navigate) => {
     const buttons = [      {
-        label: t('onboarding.page_3.button_1'),
+        label: t('onboarding.step_3.button_1'),
         onClick: () => {
           parent.postMessage({ pluginMessage: { type: 'onboarding-done'} }, '*');
           navigate('/home');

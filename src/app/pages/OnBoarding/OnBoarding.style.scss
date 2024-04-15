@@ -1,32 +1,92 @@
-.on-boarding{
-    &__container{
+/** @format */
+
+@keyframes progressAnimation1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30%;
+    }
+}
+@keyframes progressAnimation2 {
+    from {
+        width: 30%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes progressAnimation3 {
+    from {
+        width: 60%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.on-boarding {
+    &__container {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
     }
 
-    &__left{
+    &__left {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 40px;
+        gap: 48px;
     }
 
-    &__logo{
+    &__progress-bar {
+        background-color: #eeeeee;
+        width: 27.5%;
+        height: 8px;
+
+        &::before {
+            content: "";
+            height: 100%;
+            background-color: black;
+            display: block;
+        }
+    }
+
+    &__progress-bar {
+        &--1 {
+            &::before {
+                animation: progressAnimation1 0.8s linear forwards;
+            }
+        }
+        &--2 {
+            &::before {
+                animation: progressAnimation2 0.8s linear forwards;
+            }
+        }
+        &--3 {
+            &::before {
+                animation: progressAnimation3 0.8s linear forwards;
+            }
+        }
+    }
+
+    &__logo {
         margin-bottom: 32px;
     }
 
-    &__text-container{
+    &__text-container {
         display: flex;
         flex-direction: column;
-        gap: 16px; 
+        gap: 16px;
         margin-bottom: 48px;
     }
 
-    &__title{
+    &__title {
         margin: 0;
     }
 
-    &__description{
+    &__description {
         margin: 0;
     }
 }

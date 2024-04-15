@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 export type SimpleCardProps = {
-    gap?: string;
     children: ReactNode;
+    gap?: string;
+    customClassName?: string;
 };

@@ -15,7 +15,7 @@
 
 .univers-button {
   &__neophyte_nexus {
-    background-color: #3C2FED;
+    background-color: #FF0000;
     color: #fff;
     border: none;
 
@@ -24,13 +24,13 @@
     }
 
     &--outline {
-      border: 1px solid #3C2FED;
+      border: 2px solid #A90F0F;
       background-color: #FFF;
-      color: #3C2FED;
+      color: #A90F0F;
 
       &:hover{
-        border-color: #0C438D;
-        color: #0C438D;
+        border-color: #A90F0F;
+        color: #A90F0F;
         background-color: #FFF;
       }
     }

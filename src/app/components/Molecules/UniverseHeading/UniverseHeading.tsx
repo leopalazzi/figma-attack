@@ -9,20 +9,16 @@ import Badges from "../Badges/Badges";
 
 export const UniverseHeading: FunctionComponent<any> = ({ currentUniverse, badgesData, customProps }) => {
     const b = Bem("universe-heading");
-
     return (
         <div
             className={b("container")}
             {...customProps}
         >
-
-            <div>
-                {getUniverseIcon(currentUniverse.code)}
-                <TitleWithDescription
-                    title={currentUniverse.title}
-                    description={currentUniverse.description}
-                />
-            </div>
+            <img src={getUniverseIcon(currentUniverse.code)} width={"40px"} height={"40px"}/>
+            <TitleWithDescription
+                title={currentUniverse.title}
+                description={currentUniverse.description}
+            />
             <Badges badgesData={badgesData} />
         </div>
     );

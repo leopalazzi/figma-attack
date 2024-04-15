@@ -5,4 +5,5 @@ export type LayoutProps = {
     children: ReactNode;
     containerProps?: any;
     breadcrumbLinks?: any;
+    key?: string;
 };

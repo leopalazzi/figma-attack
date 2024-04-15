@@ -1,14 +1,20 @@
-import { FunctionComponent } from 'react';
-import './ActionButton.style.scss';
+/** @format */
 
-export const ActionButton: FunctionComponent<any> = ({ label, icon, outline, onClick }) => {
+import { FunctionComponent } from "react";
+import "./ActionButton.style.scss";
 
-  return (
-    <button className={outline ? 'action-button action-button-outline' : 'action-button'} onClick={onClick} aria-label={label}>
-      {icon}
-      {label}
-    </button>
-  );
+export const ActionButton: FunctionComponent<any> = ({ label, icon, outline, onClick, disabled }) => {
+    return (
+        <button
+            className={outline ? "action-button action-button-outline" : "action-button"}
+            onClick={onClick}
+            aria-label={label}
+            disabled={disabled}
+        >
+            {icon}
+            {label}
+        </button>
+    );
 };
 
 export default ActionButton;
