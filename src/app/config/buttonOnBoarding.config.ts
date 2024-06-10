@@ -23,10 +23,19 @@ export const onBoardingbuttonsConfig = {
   },
   step_3: (t,navigate) => {
     const buttons = [      {
-        label: t('onboarding.step_3.button_1'),
+        label: t('onboarding.step_4.button_1'),
+        onClick: () => {
+          navigate('/onboarding/4');
+        },
+      }]
+      return buttons;
+  },
+  step_4: (t,navigate) => {
+    const buttons = [      {
+        label: t('onboarding.step_4.button_1'),
         onClick: () => {
           parent.postMessage({ pluginMessage: { type: 'onboarding-done'} }, '*');
-          navigate('/home');
+          navigate('/recommandation');
         },
       }]
       return buttons;

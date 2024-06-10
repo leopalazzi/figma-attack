@@ -20,6 +20,7 @@
     "hideHelpLabel": "Hide Help",
     "nextStageLabel": "Next Stage",
     "submitLabel": "Submit",
+    "universeBanner": "Select a universe to start your adventure. You can change universe at anytime.",
     "breadcrumb": {
         "allUniverses": "All Universes"
     },
@@ -27,7 +28,11 @@
         "label": "Votre score est",
         "checkResults": "Voir les resultats",
         "retry": "Réessayer"
-        },
+    },
+    "recommandation":{
+        "label": "We recommend you this universe:",
+        "buttonLabel": "See all Universes"
+    },
     "basement": {
         "universes": {
             "title": "Discover Universes",
@@ -78,6 +83,17 @@
                     { "label": "Expertise", "value": "expertise_3" }
                 ]
             }
+        },
+        "step_4": {
+            "button_1": "Next",
+            "quiz": {
+                "title": "How experienced are you in Creating Design Systems and Components in Figma",
+                "answers": [
+                    { "label": "No experience", "value": "no_experience_1" },
+                    { "label": "Some experience", "value": "some_experience_2" },
+                    { "label": "Expertise", "value": "expertise_3" }
+                ]
+            }
         }
     },
     "universes": [
@@ -108,17 +124,17 @@
                                         "Interactive Components",
                                         "Custom JavaScript"
                                     ],
-                                    "correctAnswers": "Variants"
+                                    "correctAnswer": "Variants"
                                 },
                                 {
                                     "title": "Which advanced featur in Figma allows you to define complex conditional interactions based on user input or device orientation?",
                                     "answers": [
-                                        "Variants",
-                                        "Animation States",
-                                        "Interactive Components",
-                                        "Custom JavaScript"
+                                        "A",
+                                        "B",
+                                        "C",
+                                        "D"
                                     ],
-                                    "correctAnswers": "Animation States"
+                                    "correctAnswer": "A"
                                 },
                                 {
                                     "title": "Which advanced feature in Figma allows you to define complex conditional interactions based on user input or device orientation?",
@@ -128,7 +144,7 @@
                                         "Interactive Components",
                                         "Custom JavaScript"
                                     ],
-                                    "correctAnswers": "Variants"
+                                    "correctAnswer": "Variants"
                                 }
                             ]
                         },
@@ -189,7 +205,7 @@
                                         "Interactive Components",
                                         "Custom JavaScript"
                                     ],
-                                    "correctAnswers": "Variants"
+                                    "correctAnswer": "Variants"
                                 },
                                 {
                                     "title": "Which advanced feature in Figma allows you to define complex conditional interactions based on user input or device orientation?",
@@ -199,7 +215,7 @@
                                         "Interactive Components",
                                         "Custom JavaScript"
                                     ],
-                                    "correctAnswers": "Animation States"
+                                    "correctAnswer": "Animation States"
                                 },
                                 {
                                     "title": "Which advanced feature in Figma allows you to define complex conditional interactions based on user input or device orientation?",
@@ -209,7 +225,7 @@
                                         "Interactive Components",
                                         "Custom JavaScript"
                                     ],
-                                    "correctAnswers": "Variants"
+                                    "correctAnswer": "Variants"
                                 }
                             ]
                         }

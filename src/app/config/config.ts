@@ -2,5 +2,6 @@
 
 export const universesCode = {
     neophyteNexus: "neophyte_nexus",
-    craftmanCrossing: "craftman_crossing",
+    craftmenCrossing: "craftmen_crossing",
+    masterMetropolis: "master_metropolis"
 };

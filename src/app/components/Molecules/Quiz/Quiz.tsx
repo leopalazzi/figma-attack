@@ -1,11 +1,17 @@
 /** @format */
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import Bem from "../../../helpers/Bem";
 import "./Quiz.style.scss";
 import { QuizProps } from "./Quiz.model";
 
 const Quiz: FunctionComponent<QuizProps> = ({ title, answers, onSelectAnswer, keyValue }) => {
     const b = Bem("quiz");
+    const [userAnswer, setUserAnswer] = useState(null);
+
+    const onSelectInput = (event) => {
+        onSelectAnswer(event);
+        setUserAnswer(event.target.value);
+    };
 
     return (
         <div
@@ -21,12 +27,13 @@ const Quiz: FunctionComponent<QuizProps> = ({ title, answers, onSelectAnswer, ke
                             key={`answer-${i}`}
                         >
                             <input
-                                className={b("radio-button")}
+                                className={b("radio-button", {checked: answer.value === userAnswer})}
                                 type="radio"
                                 name="answer"
                                 value={answer.value}
                                 tabIndex={0}
-                                onChange={onSelectAnswer}
+                                onChange={onSelectInput}
+                                required={true}
                             />
                             {answer.label}
                         </label>

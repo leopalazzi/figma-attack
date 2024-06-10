@@ -7,7 +7,7 @@ import Bem from "../../../helpers/Bem";
 import "./ScoreCard.style.scss";
 import ActionButton from "../../Atoms/ActionButton/ActionButton";
 
-const ScoreCard: FunctionComponent<ScoreCardProps> = ({ score, questionsLength }) => {
+const ScoreCard: FunctionComponent<ScoreCardProps> = ({ score, questionsLength, onClickRetry, onClickCheckResults }) => {
     const { t } = useTranslation();
     const b = Bem("score-card");
     const isSuccessfull = questionsLength / score <= 2;
@@ -21,15 +21,13 @@ const ScoreCard: FunctionComponent<ScoreCardProps> = ({ score, questionsLength }
             <div className={b("buttons-block")}>
                 <ActionButton
                     label={t("scoreCard.checkResults")}
-                    onClick={()=>{}}
+                    onClick={onClickCheckResults}
                 />
                 <ActionButton
                     label={t("scoreCard.retry")}
-                    onClick={()=>{}}
+                    onClick={onClickRetry}
                 />
             </div>
-            {/* <Quiz title={title} answers={answers} onSelectAnswer={onSelectAnswer} keyValue={quizKey}/> */}
-            {/* <ActionButton label={t("submitLabel")} onClick={onSubmitAnswer}/> */}
         </SimpleCard>
     );
 };

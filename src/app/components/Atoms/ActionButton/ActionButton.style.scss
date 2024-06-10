@@ -21,6 +21,10 @@
   &:active {
     background-color: #1f1f1f;
   }
+
+  &:disabled{
+    background-color:#AFAFAF;
+  }
 }
 
 .action-button.action-button-outline {

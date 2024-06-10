@@ -20,17 +20,61 @@
     border: none;
 
     &:hover{
-      background-color: #0C438D;
+      background-color: #661E1E;
     }
 
     &--outline {
-      border: 2px solid #A90F0F;
+      border: 2px solid #FF0000;
       background-color: #FFF;
-      color: #A90F0F;
+      color: #FF0000;
 
       &:hover{
-        border-color: #A90F0F;
-        color: #A90F0F;
+        border-color: #661E1E;
+        color: #661E1E;
+        background-color: #FFF;
+      }
+    }
+  }
+
+  &__craftmen_crossing {
+    background-color: #0FA93F;
+    color: #fff;
+    border: none;
+
+    &:hover{
+      background-color: #133F26;
+    }
+
+    &--outline {
+      border: 2px solid #0FA93F;
+      background-color: #FFF;
+      color: #0FA93F;
+
+      &:hover{
+        border-color: #133F26;
+        color: #133F26;
+        background-color: #FFF;
+      }
+    }
+  }
+
+  &__master_metropolis{
+    background-color: #9B51E0;
+    color: #fff;
+    border: none;
+
+    &:hover{
+      background-color: #4E1782;
+    }
+
+    &--outline {
+      border: 2px solid #9B51E0;
+      background-color: #FFF;
+      color: #9B51E0;
+
+      &:hover{
+        border-color: #4E1782;
+        color: #4E1782;
         background-color: #FFF;
       }
     }

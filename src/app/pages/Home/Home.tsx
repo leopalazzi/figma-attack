@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import UniverseCards from '../../components/Organisms/UniverseCards/UniverseCards';
 import Header from '../../components/Molecules/Header/Header';
+import UniverseBanner from '../../components/Atoms/UniverseBanner/UniverseBanner';
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <div>
       <Header/>
+      <UniverseBanner />
       <UniverseCards universes={universes} type="vertical" />
     </div>
   );

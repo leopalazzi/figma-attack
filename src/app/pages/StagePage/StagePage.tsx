@@ -13,12 +13,14 @@ import Layout from "../../components/Template/Layout/Layout";
 import TimeBoxCard from "../../components/Organisms/TimeBoxCard/TimeBoxCard";
 import QuizCard from "../../components/Organisms/QuizCard/QuizCard";
 import ScoreCard from "../../components/Organisms/ScoreCard/ScoreCard";
+import AnswersSummaryCard from "../../components/Organisms/AnswersSummaryCard/AnswersSummaryCard";
 
 const StagePage = () => {
     const { t } = useTranslation();
     const { dungeonCode, stageNumber, universeCode } = useParams();
     const { pathname } = useLocation();
     const [quizIndex, setQuizIndex] = useState(0);
+    const [isSummaryOpen, setIsSummaryOpen] = useState(false);
     const [userAnswers, setUserAnswers] = useState({});
     const universes: Array<any> = t("universes", { returnObjects: true });
     const currentUniverse = universes.find((universe) => universe.code === universeCode);
@@ -39,10 +41,10 @@ const StagePage = () => {
     const onSelectAnswer = (event) => {
         setUserAnswers((prev) => {
             const currentQuiz = currentStage.quizs[quizIndex];
-            const isCorrectAnswer = currentQuiz.correctAnswers === event.target.value;
+            const isCorrectAnswer = currentQuiz.correctAnswer === event.target.value;
             return {
                 ...prev,
-                [quizIndex]: isCorrectAnswer,
+                [quizIndex]: { isCorrect: isCorrectAnswer, answer: event.target.value },
             };
         });
     };
@@ -51,6 +53,15 @@ const StagePage = () => {
         setQuizIndex((prev) => {
             return prev + 1;
         });
+    };
+
+    const resetQuiz = () => {
+        setQuizIndex(0);
+        setUserAnswers({})
+    };
+
+    const openSummary = () => {
+        setIsSummaryOpen(true);
     };
 
     const getCurrentStage = () => {
@@ -63,19 +74,29 @@ const StagePage = () => {
                 stageComponent = currentStage.steps?.length > 0 ? <StepCards steps={currentStage.steps} /> : <></>;
                 break;
             case "quiz":
-                let correctAnswers = 0;
-                const quizLength= currentStage.quizs.length;
-                Object.entries(userAnswers).forEach(([_, value]) => {
-                    if(value)
-                    {
-                        correctAnswers +=1;
-                    }
-                });
-
-                if(quizIndex === currentStage.quizs.length)
-                {
-                    Object.entries(userAnswers).forEach(([key, value]) => {console.log(key, value)});
-                    stageComponent = <ScoreCard score={correctAnswers} questionsLength={quizLength}/>
+                const quizLength = currentStage.quizs.length;
+                //if it's the end of the quiz
+                if (quizIndex === currentStage.quizs.length) {
+                    let correctAnswers = 0;
+                    Object.entries(userAnswers).forEach(([_, value]: any) => {
+                        if (value.isCorrect) {
+                            correctAnswers += 1;
+                        }
+                    });
+                    stageComponent = isSummaryOpen ? (
+                        <AnswersSummaryCard
+                            questions={currentStage.quizs}
+                            answers={userAnswers}
+                            onClickRetry={resetQuiz}
+                        />
+                    ) : (
+                        <ScoreCard
+                            score={correctAnswers}
+                            questionsLength={quizLength}
+                            onClickRetry={resetQuiz}
+                            onClickCheckResults={openSummary}
+                        />
+                    );
                 }
                 if (currentStage.quizs?.length > 0 && quizIndex < quizLength) {
                     const currentQuiz = currentStage.quizs[quizIndex];
@@ -96,6 +117,7 @@ const StagePage = () => {
                             quizLength={quizLength}
                             onSubmitAnswer={onSubmitAnswer}
                             quizKey={`quiz-${quizIndex}`}
+                            isButtonDisabled={!!!userAnswers[quizIndex]}
                         />
                     );
                 }
@@ -140,7 +162,12 @@ const StagePage = () => {
                         description={currentStage.description}
                     />
                 </div>
-                <div className="stage-description-container" id="overflow-stage">{getCurrentStage()}</div>
+                <div
+                    className="stage-description-container"
+                    id="overflow-stage"
+                >
+                    {getCurrentStage()}
+                </div>
                 {/* <StepCards steps={currentStage.steps} /> */}
             </TwoColumnsGrid>
             {currentStage.difficulty === "hard" && <div></div>}

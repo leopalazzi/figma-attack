@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AppContext } from './store/appContext';
-import App from './components/App';
+import App from './App';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import OnBoarding from './pages/OnBoarding/OnBoarding';
 import Home from './pages/Home/Home';
@@ -10,6 +10,7 @@ import StagePage from './pages/StagePage/StagePage';
 import KnowledgeTemple from './pages/KnowledgeTemple/KnowledgeTemple';
 import Basement from './pages/Basement/Basement';
 import MinifyPage from './pages/MinifyPage/MinifyPage';
+import UniverseRecommandation from './pages/UniverseRecommandation/UniverseRecommandation';
 
 export const CtxApp = () => {
   const [activePage, setActivePage] = useState('universes');
@@ -35,6 +36,7 @@ export const CtxApp = () => {
           <Route path="/basement" element={<Basement/>} />
           <Route path="/knowledges" element={<KnowledgeTemple />} />
           <Route path="/minify" element={<MinifyPage/>} />
+          <Route path="/recommandation" element={<UniverseRecommandation/>} />
         </Routes>
       </MemoryRouter>
     </AppContext.Provider>

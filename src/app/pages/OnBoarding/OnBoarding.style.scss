@@ -5,21 +5,31 @@
         width: 0;
     }
     to {
-        width: 30%;
+        width: 25%;
     }
 }
 @keyframes progressAnimation2 {
     from {
-        width: 30%;
+        width: 25%;
     }
     to {
-        width: 60%;
+        width: 50%;
     }
 }
 
 @keyframes progressAnimation3 {
     from {
-        width: 60%;
+        width: 50%;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+
+@keyframes progressAnimation4 {
+    from {
+        width: 75%;
     }
     to {
         width: 100%;
@@ -28,8 +38,7 @@
 
 .on-boarding {
     &__container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
     }
 
     &__left {
@@ -67,6 +76,11 @@
         &--3 {
             &::before {
                 animation: progressAnimation3 0.8s linear forwards;
+            }
+        }
+        &--4 {
+            &::before {
+                animation: progressAnimation4 0.8s linear forwards;
             }
         }
     }
