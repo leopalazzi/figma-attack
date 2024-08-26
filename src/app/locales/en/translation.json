@@ -113,6 +113,15 @@
                     "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
                     "stages": [
                         {
+                            "title": "Create a Responsive Header",
+                            "type": "story",
+                            "description": "Learn to use Auto Layout to create a responsive header section for a website",
+                            "story":{
+                                "title": "Story",
+                                "description": "You've been tasked with designing a website for a new restaurant.</br> The homepage should have a header section with the restaurant's logo and navigation links.</br> Your goal is to use Auto Layout to ensure that the header looks consistent and well-arranged across different screen sizes, from desktop to mobile."
+                            }
+                        },
+                        {
                             "title": "Designing a Multi-Platform Social Media Management Interface",
                             "type": "quiz",
                             "quizs": [
@@ -332,8 +341,8 @@
                     ]
                 },
                 {
-                    "code": "the_begining",
-                    "title": "The Begining",
+                    "code": "the_begining_2",
+                    "title": "The Begining 2",
                     "description": "Get ready to embark on a learning journey like no other.",
                     "imgUrl": "./test.png",
                     "numberStages": "27 Stages",

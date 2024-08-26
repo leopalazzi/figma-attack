@@ -14,6 +14,7 @@ import TimeBoxCard from "../../components/Organisms/TimeBoxCard/TimeBoxCard";
 import QuizCard from "../../components/Organisms/QuizCard/QuizCard";
 import ScoreCard from "../../components/Organisms/ScoreCard/ScoreCard";
 import AnswersSummaryCard from "../../components/Organisms/AnswersSummaryCard/AnswersSummaryCard";
+import StoryCard from "../../components/Molecules/StoryCard/StoryCard";
 
 const StagePage = () => {
     const { t } = useTranslation();
@@ -57,7 +58,7 @@ const StagePage = () => {
 
     const resetQuiz = () => {
         setQuizIndex(0);
-        setUserAnswers({})
+        setUserAnswers({});
     };
 
     const openSummary = () => {
@@ -67,6 +68,17 @@ const StagePage = () => {
     const getCurrentStage = () => {
         let stageComponent = <></>;
         switch (currentStage.type) {
+            case "story":
+                const {
+                    story: { title, description },
+                } = currentStage;
+                stageComponent = (
+                    <StoryCard
+                        title={title}
+                        description={description}
+                    />
+                );
+                break;
             case "tips":
                 stageComponent = currentStage.tips?.length > 0 ? <TipsCard tips={currentStage.tips} /> : <></>;
                 break;
