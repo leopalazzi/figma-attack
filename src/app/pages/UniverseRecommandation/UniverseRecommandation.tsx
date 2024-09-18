@@ -52,17 +52,17 @@ const UniverseRecommandation: FunctionComponent<any> = () => {
         return <></>;
     }
     const numberDungeons = universe.dungeons.length;
-    const numberSideQuests = universe.side_quests.length;
+    // const numberSideQuests = universe.side_quests.length;
     const badgesData = [
         { label: universe.level },
         {
             universe: universe.code,
             label: `${numberDungeons} ${t("dungeonsLabel")}`,
         },
-        {
-            universe: universe.code,
-            label: `${numberSideQuests} ${t("sideQuestsLabel")}`,
-        },
+        // {
+        //     universe: universe.code,
+        //     label: `${numberSideQuests} ${t("sideQuestsLabel")}`,
+        // },
     ];
     
     return (

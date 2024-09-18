@@ -21,10 +21,10 @@ const UniversePage = () => {
             universe: currentUniverse.code,
             label: `${numberDungeons} ${t("dungeonsLabel")}`,
         },
-        {
-            universe: currentUniverse.code,
-            label: currentUniverse.numberSideQuests,
-        },
+        // {
+        //     universe: currentUniverse.code,
+        //     label: currentUniverse.numberSideQuests,
+        // },
     ];
 
     const universeImg = require(`../../assets/universes/background_${currentUniverse.code}.png`)?.default;

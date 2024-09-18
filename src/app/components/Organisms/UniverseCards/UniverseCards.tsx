@@ -20,10 +20,10 @@ const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type 
                         universe: universe.code,
                         label: `${numberDungeons} ${t("dungeonsLabel")}`,
                     },
-                    {
-                        universe: universe.code,
-                        label: `${numberSideQuests} ${t("sideQuestsLabel")}`,
-                    },
+                    // {
+                    //     universe: universe.code,
+                    //     label: `${numberSideQuests} ${t("sideQuestsLabel")}`,
+                    // },
                 ];
                 const universeImg = require(`../../../assets/home/universe-${(index + 1).toString()}.png`).default;
                 return (
