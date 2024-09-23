@@ -1,5 +1,7 @@
-.dungeon-card{
-    &__container{
+/** @format */
+
+.dungeon-card {
+    &__container {
         display: flex;
         width: 572px;
         padding: 40px;
@@ -9,21 +11,35 @@
         flex-shrink: 0;
         display: flex;
         border-radius: 20px;
-        background: #FFF;
+        background: #fff;
     }
-    &__buttons-container{
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    &__stages-label {
+        color: #545454;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    &__buttons-container {
         display: flex;
         gap: 8px;
         align-self: stretch;
     }
 
-    &__title-container{
+    &__title-container {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
 
-    &__title{
+    &__title {
         margin: 0;
         font-size: 24px;
         font-style: normal;
@@ -31,10 +47,11 @@
         color: #000;
     }
 
-    &__description{
-        color:  #828282;
+    &__description {
+        color: #828282;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
+        margin: 0;
     }
 }

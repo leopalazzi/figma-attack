@@ -8,13 +8,36 @@ import ReplayIcon from "../../../icons/ReplayIcon/ReplayIcon";
 import StopIcon from "../../../icons/StopIcon/StopIcon";
 import DiscordIcon from "../../../icons/DiscordIcon/DiscordIcon";
 import ActionButton from "../../Atoms/ActionButton/ActionButton";
+import { universesCode } from "../../../config/config";
 
-const TimeBox = () => {
+const getTimerByUniverse = (universeCode) => {
+    let timer: number = 60 * 10;
+    switch (universeCode) {
+        case universesCode.neophyteNexus:
+            timer = 60 * 10;
+            break;
+        case universesCode.craftmenCrossing:
+            timer = 60 * 8;
+            break;
+        case universesCode.masterMetropolis:
+            timer = 60 * 5;
+            break;
+        default:
+            break;
+    }
+    return timer;
+};
+
+const TimeBox = ({ universeCode, keyValue }) => {
     const b = Bem("timebox");
-    const TIMER = 2;
+    const TIMER = getTimerByUniverse(universeCode);
     const [time, setTime] = useState(TIMER);
     const [isRunning, setIsRunning] = useState(false);
     const [currentState, setCurrentState] = useState("start");
+
+    useEffect(() => {
+        setTime(TIMER);
+    }, []);
 
     useEffect(() => {
         let timer;
@@ -93,7 +116,10 @@ const TimeBox = () => {
     };
 
     return (
-        <div className={b("container")}>
+        <div
+            className={b("container")}
+            key={keyValue}
+        >
             <div className={b("time-container")}>
                 {renderIcon()}
                 <div className={b("loader", { running: isRunning && time !== 0, ended: time === 0 })}>

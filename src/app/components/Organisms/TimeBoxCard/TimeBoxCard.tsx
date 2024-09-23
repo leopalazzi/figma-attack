@@ -4,11 +4,17 @@ import TitleWithDescription from "../../Molecules/TitleWithDescription/TitleWith
 import TimeBox from "../../Molecules/TimeBox/TimeBox";
 import { FunctionComponent } from "react";
 
-const TimeBoxCard: FunctionComponent<any> = ({ title, description }) => {
+const TimeBoxCard: FunctionComponent<any> = ({ title, description, universeCode, timeBoxKey }) => {
     return (
         <SimpleCard gap="32px">
-            <TitleWithDescription title={title} description={description} />
-            <TimeBox />
+            <TitleWithDescription
+                title={title}
+                description={description}
+            />
+            <TimeBox
+                universeCode={universeCode}
+                keyValue={timeBoxKey}
+            />
         </SimpleCard>
     );
 };

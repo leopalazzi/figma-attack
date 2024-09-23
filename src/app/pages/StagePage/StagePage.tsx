@@ -139,6 +139,8 @@ const StagePage = () => {
                     <TimeBoxCard
                         title={currentStage.title}
                         description={currentStage.description}
+                        universeCode={currentUniverse.code}
+                        timeBoxKey={`timebox-${stageNumber}`}
                     />
                 );
             default:
