@@ -172,6 +172,7 @@ const StagePage = () => {
                     <StageDescriptionCard
                         title={currentStage.title}
                         description={currentStage.description}
+                        displayPasteStage={currentStage.type === "story"}
                     />
                 </div>
                 <div

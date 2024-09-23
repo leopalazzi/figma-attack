@@ -1,5 +1,13 @@
-.next-arrow{
-    &-neophyte_nexus{
-        stroke: #A90F0F;
+/** @format */
+
+.next-arrow {
+    &-neophyte_nexus {
+        stroke: #a90f0f;
+    }
+    &-craftmen_crossing {
+        stroke: #00b83a;
+    }
+    &-master_metropolis {
+        stroke: #921fff;
     }
 }

@@ -12,9 +12,43 @@
     margin: 0;
   }
   &__container {
-    display: grid;
-    grid-auto-flow: column;
-    overflow-x: auto;
-    gap: 24px;
+    // display: grid;
+    // grid-auto-flow: column;
+    // overflow-x: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
   }
+}
+/* Ensure the scrollbar is always visible */
+.simplebar {
+  overflow: visible !important;  /* Ensures the scrollbar is visible */
+}
+
+.scroll-container {
+  overflow-y: auto;  /* Enable vertical scrolling */
+  height: 100%;      /* Ensure the container takes full height */
+  padding-bottom: 13px;     /* Optional padding for better visual appearance */
+}
+
+/* Remove hover effect for the scrollbar thumb */
+.simplebar-scrollbar:hover:before {
+  cursor: pointer;
+}
+
+.simplebar-track{
+  background-color: white;
+  opacity: 0.6;
+}
+
+.simplebar-scrollbar:before {
+  background-color: blue;       /* Blue scrollbar thumb */
+  border-radius: 120px;         /* Rounded scrollbar */
+  opacity: 1;                   /* Always visible */
+  transition: background-color 0.2s; /* Smooth transition */
+}
+
+.simplebar-scrollbar {
+  cursor: pointer;
 }

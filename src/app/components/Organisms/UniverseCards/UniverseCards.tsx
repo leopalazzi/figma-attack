@@ -13,7 +13,7 @@ const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type 
         <div className={`universe-cards-${type}`}>
             {universes.map((universe, index) => {
                 const numberDungeons = universe.dungeons.length;
-                const numberSideQuests = universe.side_quests.length;
+                // const numberSideQuests = universe.side_quests.length;
                 const badgesData = [
                     { label: universe.level },
                     {

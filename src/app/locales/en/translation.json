@@ -13,7 +13,7 @@
     },
     "startStageLabel": "Start Stage",
     "basementLabel": "Basement",
-    "knowledgeLabel": "Knowledge",
+    "knowledgeLabel": "Knowledge Base",
     "discoberLabel": "Discover",
     "pasteStageLabel": "Paste Stage to Figma",
     "checkHelpLabel": "Check Help",
@@ -34,21 +34,21 @@
         "buttonLabel": "See all Universes"
     },
     "basement": {
-        "universes": {
-            "title": "Discover Universes",
-            "description": "Universes are the point to start."
-        },
-        "knowledgeTemple": {
-            "title": "Discover the Knowledge Temple",
-            "description": "Curation of the best ressources for Designers."
-        }
+            "title": "Basement",
+            "description": "Your stats and progression will soon be tracked here."
     },
     "knowledgesFilter": {
         "allVideos": "All videos",
         "advancedPrototyping": "Advanced Prototyping",
         "autoLayout": "Auto Layout",
         "variables": "Variables",
-        "userResearch": "User Research"
+        "userResearch": "User Research",
+        "designSystem": "Design System"
+    },
+    "homeOnBoarding": {
+        "welcomeLabel": "Welcome to Figmattack",
+        "subtitle": "Let's get to know each other",
+        "description": "Answer this mini-questionnaire so that we can offer you the best possible experience on Figmattack."
     },
     "onboarding": {
         "step_1": {
@@ -113,6 +113,97 @@
                     "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
                     "stages": [
                         {
+                            "title": "Create a Responsive Header",
+                            "type": "story",
+                            "description": "Learn to use Auto Layout to create a responsive header section for a website.",
+                            "story": {
+                                "title": "Story",
+                                "description": "You've been tasked with designing a website for a new restaurant. The homepage should have a header section with the restaurant's logo and navigation links. Your goal is to use Auto Layout to ensure that the header looks consistent and well-arranged across different screen sizes, from desktop to mobile."
+                            }
+                        },
+                        {
+                            "title": "Design a Simple Contact Form",
+                            "type": "story",
+                            "description": "Create a responsive contact form using input fields, text areas, and buttons.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A local business needs a simple contact form for their website. The form should include fields for name, email, and message, along with a submit button. Use Auto Layout to make sure the form works well on mobile and desktop screens."
+                            }
+                        },
+                        {
+                            "title": "Create a Minimalist Footer",
+                            "type": "story",
+                            "description": "Design a minimalist footer for a portfolio website.",
+                            "story": {
+                                "title": "Story",
+                                "description": "You're helping a friend design their portfolio website. They want a clean and minimalist footer with social media links and contact information. Your task is to design the footer and make sure it looks great on both large and small screens."
+                            }
+                        },
+                        {
+                            "title": "Design a Basic Profile Card",
+                            "type": "story",
+                            "description": "Create a simple profile card with a picture, name, and short bio.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A small startup needs profile cards for their team page. Each card should display a team member’s photo, name, and short bio. Ensure the layout adjusts properly for mobile and desktop views."
+                            }
+                        },
+                        {
+                            "title": "Create a Product Feature Section",
+                            "type": "story",
+                            "description": "Design a product feature section with images and text.",
+                            "story": {
+                                "title": "Story",
+                                "description": "You're working on an e-commerce site and need to design a product feature section. Each product should have an image, a short description, and a call-to-action button. Ensure the section is responsive and adjusts well to different screen sizes."
+                            }
+                        },
+                        {
+                            "title": "Basic Interaction Design in Figma",
+                            "type": "quiz",
+                            "quizs": [
+                                {
+                                    "title": "What feature allows you to create clickable prototypes in Figma?",
+                                    "answers": [
+                                        "Components",
+                                        "Prototyping",
+                                        "Auto Layout",
+                                        "Frames"
+                                    ],
+                                    "correctAnswer": "Prototyping"
+                                },
+                                {
+                                    "title": "Which feature can be used to create reusable UI elements in Figma?",
+                                    "answers": [
+                                        "Frames",
+                                        "Components",
+                                        "Vectors",
+                                        "Styles"
+                                    ],
+                                    "correctAnswer": "Components"
+                                },
+                                {
+                                    "title": "What tool is used to draw custom shapes in Figma?",
+                                    "answers": [
+                                        "Pen Tool",
+                                        "Rectangle Tool",
+                                        "Auto Layout",
+                                        "Frame Tool"
+                                    ],
+                                    "correctAnswer": "Pen Tool"
+                                },
+                                {
+                                    "title": "What is the default unit of measurement in Figma?",
+                                    "answers": [
+                                        "Pixels",
+                                        "Inches",
+                                        "Millimeters",
+                                        "Centimeters"
+                                    ],
+                                    "correctAnswer": "Pixels"
+                                }
+                            ]
+                        },
+                        {
                             "title": "Designing a Simple Login Page",
                             "type": "timebox",
                             "description": "Create a simple login page with input fields for username and password, as well as a 'Login' button. Focus on usability and clean design."
@@ -121,132 +212,6 @@
                             "title": "Redesign a Basic Button with Hover Effects",
                             "type": "timebox",
                             "description": "Design a basic button that changes color when hovered over. Use Auto Layout to keep the button consistent and scalable."
-                        },
-                        {
-                            "title": "Create a Responsive Header",
-                            "type": "story",
-                            "description": "Learn to use Auto Layout to create a responsive header section for a website",
-                            "story":{
-                                "title": "Story",
-                                "description": "You've been tasked with designing a website for a new restaurant.</br> The homepage should have a header section with the restaurant's logo and navigation links.</br> Your goal is to use Auto Layout to ensure that the header looks consistent and well-arranged across different screen sizes, from desktop to mobile."
-                            }
-                        },
-                        {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "type": "quiz",
-                            "quizs": [
-                                {
-                                    "title": "Which advanced feature in Figma allows you to define complex conditional interactions based on user input or device orientation?",
-                                    "answers": [
-                                        "Variants",
-                                        "Animation States",
-                                        "Interactive Components",
-                                        "Custom JavaScript"
-                                    ],
-                                    "correctAnswer": "Variants"
-                                },
-                                {
-                                    "title": "Which advanced featur in Figma allows you to define complex conditional interactions based on user input or device orientation?",
-                                    "answers": [
-                                        "A",
-                                        "B",
-                                        "C",
-                                        "D"
-                                    ],
-                                    "correctAnswer": "A"
-                                },
-                                {
-                                    "title": "Which advanced feature in Figma allows you to define complex conditional interactions based on user input or device orientation?",
-                                    "answers": [
-                                        "Variants",
-                                        "Animation States",
-                                        "Interactive Components",
-                                        "Custom JavaScript"
-                                    ],
-                                    "correctAnswer": "Variants"
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "type": "steps",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Designing a Full website",
-                            "description": "In this exercise, you will create a full website that is responsive.",
-                            "type": "tips",
-                            "tips": [
-                                "Use the Ctrl + / shortcut to bring up the shortcuts menu.",
-                                "Explore the \"Figma Tips\" available on the Figma website for quick insights."
-                            ]
-                        },
-                        {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "type": "timebox",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
-                        },
-                        {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "type": "quiz",
-                            "quizs": [
-                                {
-                                    "title": "Which advanced feature in Figma allows you to define complex conditional interactions based on user input or device orientation?",
-                                    "answers": [
-                                        "Variants",
-                                        "Animation States",
-                                        "Interactive Components",
-                                        "Custom JavaScript"
-                                    ],
-                                    "correctAnswer": "Variants"
-                                },
-                                {
-                                    "title": "Which advanced feature in Figma allows you to define complex conditional interactions based on user input or device orientation?",
-                                    "answers": [
-                                        "Variants",
-                                        "Animation States",
-                                        "Interactive Components",
-                                        "Custom JavaScript"
-                                    ],
-                                    "correctAnswer": "Animation States"
-                                },
-                                {
-                                    "title": "Which advanced feature in Figma allows you to define complex conditional interactions based on user input or device orientation?",
-                                    "answers": [
-                                        "Variants",
-                                        "Animation States",
-                                        "Interactive Components",
-                                        "Custom JavaScript"
-                                    ],
-                                    "correctAnswer": "Variants"
-                                }
-                            ]
                         }
                     ]
                 },
@@ -259,9 +224,145 @@
                     "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
                     "stages": [
                         {
+                            "title": "Design a SaaS Login Page",
+                            "type": "story",
+                            "description": "Create a simple, responsive login page for a SaaS platform using Auto Layout.",
+                            "story": {
+                                "title": "Story",
+                                "description": "You've been tasked with designing a login page for a new SaaS product that helps businesses manage their teams. The page should include fields for email, password, and a login button. Your goal is to make sure the design is responsive and works well on mobile and desktop devices."
+                            }
+                        },
+                        {
+                            "title": "Create a User Onboarding Screen",
+                            "type": "story",
+                            "description": "Design an onboarding screen for a mobile app, introducing users to the key features.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A new mobile app needs an onboarding screen to introduce users to its features. The app is designed to help users organize their tasks and collaborate with teams. Your task is to design an onboarding screen that is simple and easy to follow, focusing on responsiveness across different devices."
+                            }
+                        },
+                        {
+                            "title": "Develop a SaaS Dashboard Header",
+                            "type": "story",
+                            "description": "Design a header section for a SaaS dashboard with a logo, search bar, and user profile icon.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A project management SaaS platform needs a header for its dashboard. The header should include the company's logo, a search bar, and a user profile icon. Your goal is to ensure that the header is responsive and looks great across all screen sizes."
+                            }
+                        },
+                        {
+                            "title": "Create a Mobile App Settings Page",
+                            "type": "story",
+                            "description": "Design a simple settings page for a mobile app, allowing users to adjust notifications and preferences.",
+                            "story": {
+                                "title": "Story",
+                                "description": "You've been asked to design the settings page for a productivity app. Users should be able to adjust notification preferences and other settings. Ensure the design is intuitive and works well on mobile devices."
+                            }
+                        },
+                        {
+                            "title": "Design a Subscription Pricing Section",
+                            "type": "story",
+                            "description": "Create a responsive pricing section for a SaaS website with different subscription tiers.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A new SaaS product needs a pricing section for its website. The section should display three different subscription plans, each with a list of features. Your goal is to design a clean, responsive layout that works well on both desktop and mobile."
+                            }
+                        },
+                        {
                             "title": "Designing a Multi-Platform Social Media Management Interface",
                             "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
                             "steps": [
+                                {
+                                    "title": "Introduction to Figma Basics",
+                                    "type": "quiz",
+                                    "quizs": [
+                                        {
+                                            "title": "What tool in Figma allows you to align objects evenly on the canvas?",
+                                            "answers": [
+                                                "Alignment Tool",
+                                                "Pen Tool",
+                                                "Auto Layout",
+                                                "Grid Tool"
+                                            ],
+                                            "correctAnswer": "Auto Layout"
+                                        },
+                                        {
+                                            "title": "Which element is used to add text in Figma?",
+                                            "answers": [
+                                                "Text Tool",
+                                                "Frame Tool",
+                                                "Pen Tool",
+                                                "Vector Tool"
+                                            ],
+                                            "correctAnswer": "Text Tool"
+                                        },
+                                        {
+                                            "title": "How do you duplicate an object in Figma?",
+                                            "answers": [
+                                                "Ctrl + C",
+                                                "Ctrl + D",
+                                                "Ctrl + X",
+                                                "Ctrl + F"
+                                            ],
+                                            "correctAnswer": "Ctrl + D"
+                                        },
+                                        {
+                                            "title": "What feature helps you adjust the spacing between objects evenly in Figma?",
+                                            "answers": [
+                                                "Padding",
+                                                "Margins",
+                                                "Distribute Spacing",
+                                                "Resize"
+                                            ],
+                                            "correctAnswer": "Distribute Spacing"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Create a Responsive Header",
+                                    "type": "story",
+                                    "description": "Learn to use Auto Layout to create a responsive header section for a website.",
+                                    "story": {
+                                        "title": "Story",
+                                        "description": "You've been tasked with designing a website for a new restaurant. The homepage should have a header section with the restaurant's logo and navigation links. Your goal is to use Auto Layout to ensure that the header looks consistent and well-arranged across different screen sizes, from desktop to mobile."
+                                    }
+                                },
+                                {
+                                    "title": "Design a Simple Contact Form",
+                                    "type": "story",
+                                    "description": "Create a responsive contact form using input fields, text areas, and buttons.",
+                                    "story": {
+                                        "title": "Story",
+                                        "description": "A local business needs a simple contact form for their website. The form should include fields for name, email, and message, along with a submit button. Use Auto Layout to make sure the form works well on mobile and desktop screens."
+                                    }
+                                },
+                                {
+                                    "title": "Create a Minimalist Footer",
+                                    "type": "story",
+                                    "description": "Design a minimalist footer for a portfolio website.",
+                                    "story": {
+                                        "title": "Story",
+                                        "description": "You're helping a friend design their portfolio website. They want a clean and minimalist footer with social media links and contact information. Your task is to design the footer and make sure it looks great on both large and small screens."
+                                    }
+                                },
+                                {
+                                    "title": "Design a Basic Profile Card",
+                                    "type": "story",
+                                    "description": "Create a simple profile card with a picture, name, and short bio.",
+                                    "story": {
+                                        "title": "Story",
+                                        "description": "A small startup needs profile cards for their team page. Each card should display a team member’s photo, name, and short bio. Ensure the layout adjusts properly for mobile and desktop views."
+                                    }
+                                },
+                                {
+                                    "title": "Create a Product Feature Section",
+                                    "type": "story",
+                                    "description": "Design a product feature section with images and text.",
+                                    "story": {
+                                        "title": "Story",
+                                        "description": "You're working on an e-commerce site and need to design a product feature section. Each product should have an image, a short description, and a call-to-action button. Ensure the section is responsive and adjusts well to different screen sizes."
+                                    }
+                                },
                                 {
                                     "title": "Create a Minimalist Business Card",
                                     "type": "timebox",
@@ -292,40 +393,19 @@
                             ]
                         },
                         {
-                            "title": "Designing a Full website",
-                            "description": "In this exercise, you will create a full website that is responsive.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                }
-                            ]
+                            "title": "Create a Minimalist Business Card",
+                            "type": "timebox",
+                            "description": "Design a minimalist business card using only typography and basic shapes. Focus on layout, alignment, and clean presentation."
                         },
                         {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                }
-                            ]
+                            "title": "Design a Simple Footer for a Website",
+                            "type": "timebox",
+                            "description": "Create a footer for a website, including navigation links and social media icons. Ensure it's responsive using Auto Layout."
+                        },
+                        {
+                            "title": "Create a Basic Color Palette for a Brand",
+                            "type": "timebox",
+                            "description": "Develop a basic color palette consisting of a primary, secondary, and accent color for a new brand concept."
                         }
                     ]
                 }
@@ -349,6 +429,117 @@
                     "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
                     "stages": [
                         {
+                            "title": "Design a Responsive Pricing Table",
+                            "type": "story",
+                            "description": "Create a responsive pricing table for a subscription-based service.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A SaaS company needs a pricing table for their website. The table should display three pricing tiers with different features listed under each. Your task is to create a responsive pricing table that adjusts for mobile and desktop."
+                            }
+                        },
+                        {
+                            "title": "Develop a User Profile Page",
+                            "type": "story",
+                            "description": "Design a user profile page with editable fields for user information.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A social network needs a profile page design. The page should allow users to view and edit their profile information, including name, bio, and profile picture. Ensure the layout is responsive and works across different devices."
+                            }
+                        },
+                        {
+                            "title": "Design an Event Registration Form",
+                            "type": "story",
+                            "description": "Create a registration form for an online event.",
+                            "story": {
+                                "title": "Story",
+                                "description": "An organization is hosting an online event and needs a registration form. The form should include fields for name, email, and event preferences. Use Auto Layout to make sure the form is responsive and easy to use on both desktop and mobile."
+                            }
+                        },
+                        {
+                            "title": "Design a Blog Post Layout",
+                            "type": "story",
+                            "description": "Create a blog post layout with text, images, and comments section.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A news website needs a template for blog posts. The layout should include a title, featured image, text content, and a section for user comments. Your goal is to make the design responsive and visually appealing."
+                            }
+                        },
+                        {
+                            "title": "Create a Responsive Product Card Grid",
+                            "type": "story",
+                            "description": "Design a grid of product cards for an online store.",
+                            "story": {
+                                "title": "Story",
+                                "description": "You're tasked with designing a grid of product cards for an online store. Each card should show an image, title, price, and a short description. Use Auto Layout to ensure the grid is responsive and looks great on both mobile and desktop."
+                            }
+                        },
+                        {
+                            "title": "Intermediate Figma Tools and Features",
+                            "type": "quiz",
+                            "quizs": [
+                                {
+                                    "title": "What feature allows you to align objects horizontally or vertically in Figma?",
+                                    "answers": [
+                                        "Constraints",
+                                        "Grids",
+                                        "Auto Layout",
+                                        "Vector Networks"
+                                    ],
+                                    "correctAnswer": "Auto Layout"
+                                },
+                                {
+                                    "title": "Which tool helps you combine shapes into a single path?",
+                                    "answers": [
+                                        "Pen Tool",
+                                        "Union Tool",
+                                        "Boolean Operations",
+                                        "Constraints"
+                                    ],
+                                    "correctAnswer": "Boolean Operations"
+                                },
+                                {
+                                    "title": "How can you maintain proportions while resizing an object?",
+                                    "answers": [
+                                        "Hold Shift",
+                                        "Hold Ctrl",
+                                        "Use the Resize Tool",
+                                        "Select Auto Layout"
+                                    ],
+                                    "correctAnswer": "Hold Shift"
+                                },
+                                {
+                                    "title": "Which Figma feature allows you to export designs as images or code?",
+                                    "answers": [
+                                        "Slice Tool",
+                                        "Export Tool",
+                                        "Frame Tool",
+                                        "Inspect Mode"
+                                    ],
+                                    "correctAnswer": "Export Tool"
+                                },
+                                {
+                                    "title": "Which feature in Figma allows you to quickly apply styles like colors and typography to multiple objects?",
+                                    "answers": [
+                                        "Styles",
+                                        "Components",
+                                        "Frames",
+                                        "Pen Tool"
+                                    ],
+                                    "correctAnswer": "Styles"
+                                },
+                                {
+                                    "title": "How can you create a scrolling effect within a frame in Figma?",
+                                    "answers": [
+                                        "Enable Scrolling in Prototype Settings",
+                                        "Use Auto Layout",
+                                        "Use the Slice Tool",
+                                        "Use Constraints"
+                                    ],
+                                    "correctAnswer": "Enable Scrolling in Prototype Settings"
+                                }
+                            ]
+                        },
+                        {
                             "title": "Design a Responsive Navigation Bar",
                             "type": "timebox",
                             "description": "Create a navigation bar that adapts to different screen sizes (mobile, tablet, and desktop). Use Auto Layout to ensure responsiveness."
@@ -362,51 +553,6 @@
                             "title": "Develop a Landing Page for a Startup",
                             "type": "timebox",
                             "description": "Design a responsive landing page for a startup, including a hero section, feature highlights, and a call-to-action button."
-                        },
-                        {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "type": "steps",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Designing a Full website",
-                            "type": "tips",
-                            "description": "In this exercise, you will create a full website that is responsive.",
-                            "tips": [
-                                "Use the Ctrl + / shortcut to bring up the shortcuts menu.",
-                                "Explore the \"Figma Tips\" available on the Figma website for quick insights."
-                            ]
-                        },
-                        {
-                            "type": "timebox",
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
                         }
                     ]
                 },
@@ -417,70 +563,127 @@
                     "imgUrl": "./test.png",
                     "numberStages": "27 Stages",
                     "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-                    "stages": [
+                    "stages": [               
                         {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-                            "steps": [
+                            "title": "Develop a User Analytics Dashboard",
+                            "type": "story",
+                            "description": "Create a dashboard for a SaaS product that displays user analytics data using graphs and charts.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A SaaS platform that provides user engagement tracking needs a dashboard to display analytics data. The dashboard should include graphs and charts showing metrics such as active users, session durations, and conversions. Your goal is to design a responsive dashboard that looks great on both desktop and mobile."
+                            }
+                        },
+                        {
+                            "title": "Design a Mobile App Profile Page",
+                            "type": "story",
+                            "description": "Create a profile page for a social media app, including options for users to edit their information.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A social media app is launching soon, and it needs a user profile page. The profile page should include the user's photo, bio, and the option to edit their information. Ensure the layout is responsive and intuitive on mobile devices."
+                            }
+                        },
+                        {
+                            "title": "Create a Team Management Section for SaaS",
+                            "type": "story",
+                            "description": "Design a responsive team management section where users can add, remove, or edit team members.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A SaaS product that helps companies manage their teams needs a new section in the dashboard. This section should allow users to add, remove, or edit team members. Your task is to design this section and ensure it is responsive and user-friendly."
+                            }
+                        },
+                        {
+                            "title": "Develop a SaaS Notifications Page",
+                            "type": "story",
+                            "description": "Create a notifications page for a SaaS platform, allowing users to view and manage their alerts.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A SaaS platform that manages business workflows needs a notifications page. Users should be able to view and manage their alerts, including marking notifications as read or deleting them. Ensure the design is responsive across different screen sizes."
+                            }
+                        },
+                        {
+                            "title": "Design a Multi-Step Form for a Mobile App",
+                            "type": "story",
+                            "description": "Create a multi-step form for a mobile app, guiding users through a process like setting up their account.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A fitness app is launching a new feature where users can set up personalized workout plans. The setup involves a multi-step form that guides users through inputting their preferences, fitness goals, and schedule. Design a responsive and user-friendly form that works well on mobile devices."
+                            }
+                        },
+                        {
+                            "title": "Responsive Design with Figma",
+                            "type": "quiz",
+                            "quizs": [
                                 {
-                                    "title": "Create a User Profile with Editable Fields",
-                                    "type": "timebox",
-                                    "description": "Design a user profile interface that includes editable fields for name, email, and profile picture. Use Figma’s prototyping tools to simulate interactions."
+                                    "title": "What Figma feature helps create responsive designs by adjusting elements automatically?",
+                                    "answers": [
+                                        "Auto Layout",
+                                        "Constraints",
+                                        "Boolean Operations",
+                                        "Grids"
+                                    ],
+                                    "correctAnswer": "Auto Layout"
                                 },
                                 {
-                                    "title": "Design a Simple Dashboard for Tracking Sales",
-                                    "type": "timebox",
-                                    "description": "Create a sales tracking dashboard with data visualizations, including charts and progress bars. Focus on layout and clarity of information."
+                                    "title": "Which tool allows you to define specific screen sizes for your design in Figma?",
+                                    "answers": [
+                                        "Frame Tool",
+                                        "Slice Tool",
+                                        "Pen Tool",
+                                        "Text Tool"
+                                    ],
+                                    "correctAnswer": "Frame Tool"
                                 },
                                 {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                    "title": "What does setting Constraints in Figma do?",
+                                    "answers": [
+                                        "It fixes the position of elements when resizing frames.",
+                                        "It limits the number of layers in a file.",
+                                        "It restricts color usage.",
+                                        "It fixes layer blending options."
+                                    ],
+                                    "correctAnswer": "It fixes the position of elements when resizing frames."
                                 },
                                 {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
+                                    "title": "What is the primary use of Grids in Figma?",
+                                    "answers": [
+                                        "To assist with layout and alignment",
+                                        "To create vector shapes",
+                                        "To set color palettes",
+                                        "To manage text sizes"
+                                    ],
+                                    "correctAnswer": "To assist with layout and alignment"
                                 },
                                 {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
+                                    "title": "What happens when you group objects in Figma?",
+                                    "answers": [
+                                        "They move together and share common properties.",
+                                        "They merge into a single object.",
+                                        "They disappear from the Layers panel.",
+                                        "They become invisible until ungrouped."
+                                    ],
+                                    "correctAnswer": "They move together and share common properties."
+                                },
+                                {
+                                    "title": "What is the use of Nested Components in Figma?",
+                                    "answers": [
+                                        "To create reusable elements that can be updated globally",
+                                        "To merge shapes into one layer",
+                                        "To lock the position of components",
+                                        "To add image filters"
+                                    ],
+                                    "correctAnswer": "To create reusable elements that can be updated globally"
                                 }
                             ]
                         },
                         {
-                            "title": "Designing a Full website",
-                            "description": "In this exercise, you will create a full website that is responsive.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                }
-                            ]
+                            "title": "Create a User Profile with Editable Fields",
+                            "type": "timebox",
+                            "description": "Design a user profile interface that includes editable fields for name, email, and profile picture. Use Figma’s prototyping tools to simulate interactions."
                         },
                         {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                }
-                            ]
+                            "title": "Design a Simple Dashboard for Tracking Sales",
+                            "type": "timebox",
+                            "description": "Create a sales tracking dashboard with data visualizations, including charts and progress bars. Focus on layout and clarity of information."
                         }
                     ]
                 }
@@ -504,6 +707,137 @@
                     "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
                     "stages": [
                         {
+                            "title": "Design a Full E-Commerce Homepage",
+                            "type": "story",
+                            "description": "Create a complete homepage for an online store, including a hero section, product categories, and promotional banners.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A large e-commerce company needs a homepage design for their upcoming sales event. The page should feature a hero section with a call to action, a section highlighting different product categories, and promotional banners. Ensure the design is responsive and looks great on all devices."
+                            }
+                        },
+                        {
+                            "title": "Develop a Mobile App Dashboard",
+                            "type": "story",
+                            "description": "Create a dashboard interface for a mobile app that tracks fitness activities.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A fitness app needs a dashboard interface where users can view their daily activity, track workout progress, and monitor their health metrics. Your task is to design a user-friendly, responsive dashboard that looks great on mobile screens."
+                            }
+                        },
+                        {
+                            "title": "Design an Advanced Analytics Dashboard",
+                            "type": "story",
+                            "description": "Create a detailed analytics dashboard for a data-heavy application.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A large corporation needs a highly detailed analytics dashboard for their internal data. The dashboard should include various data visualizations such as charts, graphs, and key performance indicators. Ensure the design is responsive and easy to use across different screen sizes."
+                            }
+                        },
+                        {
+                            "title": "Create a Multi-Step Checkout Process",
+                            "type": "story",
+                            "description": "Design a responsive, multi-step checkout process for an e-commerce platform.",
+                            "story": {
+                                "title": "Story",
+                                "description": "An e-commerce site wants to redesign its checkout process to improve user experience. The process should include multiple steps: cart review, shipping information, payment details, and confirmation. Ensure the design is easy to follow and works well on mobile and desktop."
+                            }
+                        },
+                        {
+                            "title": "Develop a Complex Real Estate Listing Interface",
+                            "type": "story",
+                            "description": "Design an interface for a real estate platform that showcases property listings with filtering and search options.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A real estate platform needs a new design for their property listings page. The page should include a search bar, filtering options, and detailed property cards with images and descriptions. Your task is to create a responsive interface that is user-friendly and looks great on all devices."
+                            }
+                        },
+                        {
+                            "title": "Advanced Figma Features and Techniques",
+                            "type": "quiz",
+                            "quizs": [
+                                {
+                                    "title": "Which feature in Figma allows you to create interactive states for components?",
+                                    "answers": [
+                                        "Variants",
+                                        "Constraints",
+                                        "Prototyping",
+                                        "Auto Layout"
+                                    ],
+                                    "correctAnswer": "Variants"
+                                },
+                                {
+                                    "title": "Which advanced feature in Figma allows you to create animations between frames?",
+                                    "answers": [
+                                        "Smart Animate",
+                                        "Drag Gesture",
+                                        "Variants",
+                                        "Custom JavaScript"
+                                    ],
+                                    "correctAnswer": "Smart Animate"
+                                },
+                                {
+                                    "title": "What is the primary benefit of using Variants in Figma?",
+                                    "answers": [
+                                        "Creating multiple versions of a component with different states",
+                                        "Adding 3D elements",
+                                        "Resizing objects proportionally",
+                                        "Changing color schemes globally"
+                                    ],
+                                    "correctAnswer": "Creating multiple versions of a component with different states"
+                                },
+                                {
+                                    "title": "What does the 'Swap Instance' feature in Figma allow you to do?",
+                                    "answers": [
+                                        "Change the component while retaining the current instance properties",
+                                        "Merge two components",
+                                        "Create animations between objects",
+                                        "Apply color schemes globally"
+                                    ],
+                                    "correctAnswer": "Change the component while retaining the current instance properties"
+                                },
+                                {
+                                    "title": "Which feature allows you to define complex conditional interactions based on user input?",
+                                    "answers": [
+                                        "Interactive Components",
+                                        "Auto Layout",
+                                        "Constraints",
+                                        "Custom JavaScript"
+                                    ],
+                                    "correctAnswer": "Interactive Components"
+                                },
+                                {
+                                    "title": "How does Figma handle multi-user collaboration?",
+                                    "answers": [
+                                        "Real-time collaboration with live cursors and comments",
+                                        "Locking files for individual users",
+                                        "Providing separate copies of files for each user",
+                                        "Sending email notifications for file changes"
+                                    ],
+                                    "correctAnswer": "Real-time collaboration with live cursors and comments"
+                                },
+                                {
+                                    "title": "What is the purpose of creating a Design System in Figma?",
+                                    "answers": [
+                                        "To ensure consistency across a product by reusing components and styles",
+                                        "To merge layers and create reusable shapes",
+                                        "To add animations to designs",
+                                        "To lock layers for editing"
+                                    ],
+                                    "correctAnswer": "To ensure consistency across a product by reusing components and styles"
+                                },
+                                {
+                                    "title": "Which Figma feature allows you to preview and test interactive prototypes on mobile devices?",
+                                    "answers": [
+                                        "Figma Mirror",
+                                        "Variants",
+                                        "Constraints",
+                                        "Prototype Editor"
+                                    ],
+                                    "correctAnswer": "Figma Mirror"
+                                }
+                            ]
+                        },
+                        {
                             "title": "Redesign an E-Commerce Homepage",
                             "type": "timebox",
                             "description": "Redesign a full e-commerce homepage that includes a product carousel, promotional banners, and category navigation. Focus on responsiveness and visual hierarchy."
@@ -517,51 +851,6 @@
                             "title": "Design a Complex Interactive Dashboard",
                             "type": "timebox",
                             "description": "Create an interactive dashboard for a data-heavy application, including filters, charts, and real-time updates. Use Figma’s prototyping tools to simulate interactions."
-                        },
-                        {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "type": "steps",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options.",
-                                    "helps": [
-                                        "Define pricing variables: Set up variables for product prices and options (e.g., size, color).",
-                                        "Create product variants: Design product cards with variants reflecting different pricing options and attributes."
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Designing a Full website",
-                            "type": "tips",
-                            "description": "In this exercise, you will create a full website that is responsive.",
-                            "tips": [
-                                "Use the Ctrl + / shortcut to bring up the shortcuts menu.",
-                                "Explore the \"Figma Tips\" available on the Figma website for quick insights."
-                            ]
-                        },
-                        {
-                            "type": "timebox",
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices."
                         }
                     ]
                 },
@@ -572,7 +861,138 @@
                     "imgUrl": "./test.png",
                     "numberStages": "27 Stages",
                     "badges": ["Auto layout", "Responsive", "Advanced Prototyping"],
-                    "stages": [
+                    "stages": [             
+                        {
+                            "title": "Design a Full SaaS Dashboard with Advanced Features",
+                            "type": "story",
+                            "description": "Create a fully responsive SaaS dashboard that includes data visualization, filters, and customizable widgets.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A new SaaS product aimed at business analytics needs a comprehensive dashboard for its users. The dashboard should include data visualization tools such as charts and graphs, filters to narrow down data, and customizable widgets that users can add or remove. Your goal is to design a responsive and intuitive dashboard for both mobile and desktop users."
+                            }
+                        },
+                        {
+                            "title": "Create a Complex App Interface for Task Management",
+                            "type": "story",
+                            "description": "Design a task management interface for a productivity app, allowing users to assign tasks, set deadlines, and track progress.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A task management app wants to redesign its interface to include advanced features like assigning tasks, setting deadlines, and tracking task progress in real-time. Your task is to design an intuitive, responsive interface that works seamlessly across devices."
+                            }
+                        },
+                        {
+                            "title": "Develop a Comprehensive User Permissions System",
+                            "type": "story",
+                            "description": "Design a user permissions system for a SaaS platform, allowing admins to manage roles and access levels for different users.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A SaaS platform needs a robust user permissions system where admins can assign roles and manage access levels for different users. The system should be easy to navigate and scalable for larger teams. Your goal is to design a responsive interface that works seamlessly across devices."
+                            }
+                        },
+                        {
+                            "title": "Design a Cross-Platform Scheduling System for a SaaS Product",
+                            "type": "story",
+                            "description": "Create a cross-platform scheduling system that allows users to schedule tasks, meetings, and events across different time zones.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A SaaS product focused on team collaboration needs a scheduling system that works across different time zones. The system should allow users to schedule tasks, meetings, and events seamlessly across various devices. Your task is to design a responsive interface that makes scheduling simple and intuitive for users."
+                            }
+                        },
+                        {
+                            "title": "Develop a Complex Billing System for a SaaS Platform",
+                            "type": "story",
+                            "description": "Design a billing system for a SaaS product that allows users to manage their subscriptions, view invoices, and update payment methods.",
+                            "story": {
+                                "title": "Story",
+                                "description": "A SaaS platform needs a billing system where users can manage their subscriptions, view invoices, and update their payment methods. The system should be secure, easy to use, and scalable for businesses of different sizes. Your task is to design a responsive and user-friendly interface."
+                            }
+                        },
+                        {
+                            "title": "Mastering Prototyping and Interaction in Figma",
+                            "type": "quiz",
+                            "quizs": [
+                                {
+                                    "title": "What does Smart Animate do in Figma?",
+                                    "answers": [
+                                        "Creates smooth animations between frames based on layer differences",
+                                        "Resizes objects proportionally",
+                                        "Adds 3D effects to designs",
+                                        "Generates code for animations"
+                                    ],
+                                    "correctAnswer": "Creates smooth animations between frames based on layer differences"
+                                },
+                                {
+                                    "title": "What is the purpose of Auto Layout in Figma?",
+                                    "answers": [
+                                        "To automatically adjust the size and position of elements based on the content",
+                                        "To animate transitions between pages",
+                                        "To create multiple artboards",
+                                        "To enable multi-user collaboration"
+                                    ],
+                                    "correctAnswer": "To automatically adjust the size and position of elements based on the content"
+                                },
+                                {
+                                    "title": "How do Interactive Components enhance prototypes?",
+                                    "answers": [
+                                        "They allow you to define interactions between component states without multiple frames",
+                                        "They create complex animations between frames",
+                                        "They generate code for developers",
+                                        "They lock layers from being edited"
+                                    ],
+                                    "correctAnswer": "They allow you to define interactions between component states without multiple frames"
+                                },
+                                {
+                                    "title": "Which tool in Figma allows you to create hotspots for navigation between frames?",
+                                    "answers": [
+                                        "Prototype Tool",
+                                        "Auto Layout",
+                                        "Constraints",
+                                        "Slice Tool"
+                                    ],
+                                    "correctAnswer": "Prototype Tool"
+                                },
+                                {
+                                    "title": "What is the benefit of using Constraints in responsive design?",
+                                    "answers": [
+                                        "They ensure that elements scale and reposition correctly when the frame is resized",
+                                        "They add interactivity to objects",
+                                        "They allow you to export designs as code",
+                                        "They generate a design system"
+                                    ],
+                                    "correctAnswer": "They ensure that elements scale and reposition correctly when the frame is resized"
+                                },
+                                {
+                                    "title": "Which feature in Figma lets you preview your design on mobile devices in real-time?",
+                                    "answers": [
+                                        "Figma Mirror",
+                                        "Prototype Editor",
+                                        "Auto Layout",
+                                        "Interactive Components"
+                                    ],
+                                    "correctAnswer": "Figma Mirror"
+                                },
+                                {
+                                    "title": "What is the use of nested components in Figma?",
+                                    "answers": [
+                                        "To create complex component structures where one component can contain another",
+                                        "To export designs as code",
+                                        "To lock layers in place",
+                                        "To generate animations"
+                                    ],
+                                    "correctAnswer": "To create complex component structures where one component can contain another"
+                                },
+                                {
+                                    "title": "How does the Smart Selection feature help in Figma?",
+                                    "answers": [
+                                        "It allows you to quickly align and evenly space objects",
+                                        "It enables 3D effects",
+                                        "It adds code snippets to designs",
+                                        "It exports components to a design system"
+                                    ],
+                                    "correctAnswer": "It allows you to quickly align and evenly space objects"
+                                }
+                            ]
+                        },
                         {
                             "title": "Develop a Multi-Step Form with Validation",
                             "type": "timebox",
@@ -582,60 +1002,6 @@
                             "title": "Redesign a Complex App Interface with Prototyping",
                             "type": "timebox",
                             "description": "Redesign an existing app interface to improve user experience and add new features. Include interactive prototypes with animations and transitions."
-                        },
-                        {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Designing a Full website",
-                            "description": "In this exercise, you will create a full website that is responsive.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                }
-                            ]
-                        },
-                        {
-                            "title": "Designing a Multi-Platform Social Media Management Interface",
-                            "description": "In this exercise, you will dive into the realm of e-commerce by designing a sophisticated product catalog named \"ShopHub\" that demonstrates the capabilities of Figma's advanced features: variables, variants, modes, and Auto Layout. The goal is to create an immersive and responsive shopping experience that showcases products with variable pricing and adapts seamlessly to different devices.",
-                            "steps": [
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                },
-                                {
-                                    "title": "Interactive Product Exploration",
-                                    "description": "Develop interactive components that allow users to explore product details and view multiple images."
-                                },
-                                {
-                                    "title": "Dynamic Pricing and Product Customization",
-                                    "description": "Design an e-commerce catalog where users can explore products with variable pricing based on selected options."
-                                }
-                            ]
                         }
                     ]
                 }

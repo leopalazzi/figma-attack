@@ -28,7 +28,7 @@ const StageCard = ({ stageNumberTitle, title, universeCode, dungeonCode, stageNu
                 tabIndex={0}
                 onClick={onClickNextStage}
             >
-                <span className={b(`next-label-${universeCode}`)}>{t("startStageLabel")}</span>
+                <span className={b(`start-label`).mix(universeCode)}>{t("startStageLabel")}</span>
                 <NextArrowIcon universeCode={universeCode} />
             </div>
         </div>

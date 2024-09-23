@@ -1,25 +1,27 @@
+/** @format */
+
 .filter-button {
-  display: flex;
-  padding: 12px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  color: #1f1f1f;
-  border-radius: 12px;
-  background: #f6f6f6;
-  border: none;
-  cursor: pointer;
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1f1f1f;
+    border-radius: 12px;
+    background: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    cursor: pointer;
 
-  &:hover {
-    background-color: #6b6b6b;
-  }
+    &:hover {
+        border: 1px solid #afafaf;
+    }
 
-  &-active {
-    background: #1f1f1f;
-    color: #fff;
-  }
+    &-active {
+        background: #1f1f1f;
+        color: #fff;
+    }
 }

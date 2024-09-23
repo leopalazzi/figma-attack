@@ -6,7 +6,7 @@ import ActionButton from "../../Atoms/ActionButton/ActionButton";
 import domtoimage from "dom-to-image";
 import { useTranslation } from "react-i18next";
 
-const StageDescriptionCard = ({ title, description }) => {
+const StageDescriptionCard = ({ title, description, displayPasteStage }) => {
     const b = Bem("stage-description-card");
     const { t } = useTranslation();
 
@@ -44,7 +44,7 @@ const StageDescriptionCard = ({ title, description }) => {
                 <h4 className={b("title")}>{title}</h4>
                 <p className={b("presentation")}>{description}</p>
             </div>
-            <div><ActionButton label={t("pasteStageLabel")} onClick={exportToPng}/></div>
+            {displayPasteStage && <div><ActionButton label={t("pasteStageLabel")} onClick={exportToPng}/></div>}
         </SimpleCard>
     );
 };

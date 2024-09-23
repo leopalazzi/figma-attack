@@ -4,19 +4,20 @@ export enum filtersType {
   autoLayout = 'autoLayout',
   variables = 'variables',
   userResearch = 'userResearch',
+  designSystem = 'designSystem'
 }
 
 export const availableFilters = Object.values(filtersType);
 
 export const knowledgesVideo = [
   {
-    id: 'NzXamkyOsv4',
-    title: '4 Figma Variables Updates You Probably Overlooked',
+    id: 'APNWWhXIg04',
+    title: 'Figma tutorial: Variables for typography',
     filters: [filtersType.variables],
   },
   {
-    id: 'EHts69bwW6o',
-    title: 'Prioritizing Users in Sprint Reviews',
+    id: 'UUsysuFmVrA',
+    title: 'Figma for Edu: Prototyping 101, new basics',
     filters: [filtersType.userResearch],
   },
   {

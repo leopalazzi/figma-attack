@@ -1,15 +1,47 @@
+/** @format */
+
 .basement {
-  &__universe-part {
-    margin-bottom: 56px;
-  }
-  &__universe-card {
-    min-width: 1084px;
-  }
-  &__title-with-button {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 48px;
-  }
+    &__container {
+        display: flex;
+        padding-left: 40px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 195px;
+        align-self: stretch;
+        background: #F9FAFB;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__universe-card {
+        min-width: 1084px;
+    }
+    &__title-with-button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+
+    &__badge {
+        border: 1px solid #1d2939;
+        background: #eaecf0;
+        border-radius: 8px;
+        font-size: 12px;
+        color: #344054;
+        padding: 4px 8px;
+        font-weight: 600;
+        position: absolute;
+        left: 255px;
+    }
+
+    &__button-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 4px;
+    }
 }

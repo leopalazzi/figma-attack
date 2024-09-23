@@ -1,37 +1,40 @@
+/** @format */
+
 .navbar {
-  &__container {
-    position: fixed;
-    display: flex;
-    padding: 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    bottom: 0;
-    width: 100%;
-    background: #1f1f1f;
-    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.24);
-    max-width: -webkit-fill-available;
-  }
-
-  &__button {
-    display: flex;
-    padding: 16px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    flex: 1 0 0;
-    background: #1f1f1f;
-    border-radius: 8px;
-    border: none;
-    color: #f7f7f7;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-
-    &--active {
-      color: #1f1f1f;
-      background-color: #f7f7f7;
+    &__container {
+        position: fixed;
+        display: flex;
+        padding: 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        bottom: 0;
+        width: calc(100% - 48px);
+        background: #fff;
     }
-  }
+
+    &__button {
+        display: flex;
+        padding: 16px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex: 1 0 0;
+        background: transparent;
+        border-radius: 8px;
+        border: none;
+        color: #1f1f1f;
+
+        &--active {
+            color: #f6f6f6;
+            background-color: #1f1f1f;
+        }
+    }
+
+    &__button-text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
 }

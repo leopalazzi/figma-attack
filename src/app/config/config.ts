@@ -5,3 +5,9 @@ export const universesCode = {
     craftmenCrossing: "craftmen_crossing",
     masterMetropolis: "master_metropolis"
 };
+
+export const pagesCode = {
+    universes: "universes",
+    basement: "basement",
+    knowledges: "knowledges"
+}

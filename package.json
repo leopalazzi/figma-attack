@@ -1,6 +1,6 @@
 {
   "name": "figma-plugin-react-template",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Figmattack: How to be an expert in UX/UI with a simple plugin !",
   "license": "ISC",
   "scripts": {
@@ -19,7 +19,8 @@
     "react-i18next": "^13.2.2",
     "react-router-dom": "^6.16.0",
     "react-youtube": "^10.1.0",
-    "sass": "^1.67.0"
+    "sass": "^1.67.0",
+    "simplebar-react": "^3.2.6"
   },
   "devDependencies": {
     "@figma/plugin-typings": "^1.79.0",

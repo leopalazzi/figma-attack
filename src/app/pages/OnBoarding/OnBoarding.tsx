@@ -15,9 +15,9 @@ import onBoarding2 from "../../assets/onboarding-2.jpg";
 import onBoarding3 from "../../assets/onboarding-3.jpg";
 // @ts-ignore
 import onBoarding4 from "../../assets/onboarding-4.jpg";
-
 import Quiz from "../../components/Molecules/Quiz/Quiz";
 import { AppContext } from "../../store/appContext";
+import FireIcon from "../../icons/FireIcon/FireIcon";
 
 export const OnBoarding: FunctionComponent<any> = () => {
     const { t } = useTranslation();
@@ -78,6 +78,7 @@ export const OnBoarding: FunctionComponent<any> = () => {
                                 key={`onBoardingBtn-${index}`}
                                 {...buttonConfig}
                                 disabled={!!!onBoardingAnswers[`step_${id}`]}
+                                icon={<FireIcon active={true}/>}
                             />
                         );
                     })}
