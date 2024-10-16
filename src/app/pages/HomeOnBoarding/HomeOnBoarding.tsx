@@ -22,12 +22,12 @@ const HomeOnBoarding = () => {
             <div className={bem("container")}>
                 <div className={bem("welcome-container")}>
                     <img src={logo} />
-                    <h2 className={bem("welcome-label")}>{t("homeOnBoading.welcomeLabel")}</h2>
+                    <h2 className={bem("welcome-label")}>{t("homeOnBoarding.welcomeLabel")}</h2>
                 </div>
                 <div className={bem("content")}>
                     <div className={bem("text")}>
-                        <h3 className={bem("subtitle")}>{t("homeOnBoading.subtitle")}</h3>
-                        <p className={bem("description")}>{t("homeOnBoading.description")}</p>
+                        <h3 className={bem("subtitle")}>{t("homeOnBoarding.subtitle")}</h3>
+                        <p className={bem("description")}>{t("homeOnBoarding.description")}</p>
                     </div>
                     <ActionButton
                         label={"Let's go"}

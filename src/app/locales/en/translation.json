@@ -19,15 +19,16 @@
     "checkHelpLabel": "Check Help",
     "hideHelpLabel": "Hide Help",
     "nextStageLabel": "Next Stage",
+    "previousStageLabel": "Previous Stage",
     "submitLabel": "Submit",
     "universeBanner": "Select a universe to start your adventure. You can change universe at anytime.",
     "breadcrumb": {
         "allUniverses": "All Universes"
     },
     "scoreCard": {
-        "label": "Votre score est",
-        "checkResults": "Voir les resultats",
-        "retry": "Réessayer"
+        "label": "Your score is",
+        "checkResults": "Check results",
+        "retry": "Retry"
     },
     "recommandation":{
         "label": "We recommend you this universe:",
@@ -416,7 +417,7 @@
         {
             "code": "craftmen_crossing",
             "title": "Craftmen's Crossing",
-            "description": "If you start with Figma, this Universe is made for you.",
+            "description": "If you already use Figma and want to improve your skills, this Universe is for you!",
             "level": "Medium",
             "numberSideQuests": "",
             "dungeons": [

@@ -30,7 +30,7 @@ const UniversePage = () => {
     const universeImg = require(`../../assets/universes/background_${currentUniverse.code}.png`)?.default;
 
     const breadcrumbLinks = [
-        { url: "/home", label: t("breadcrumb.allUniverses") },
+        { url: "/home", label: t("universesLabel") },
         { url: `/universe/${currentUniverse.code}`, label: currentUniverse.title, current: true },
     ];
     return (

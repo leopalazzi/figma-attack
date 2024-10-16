@@ -4,9 +4,13 @@ import { FunctionComponent } from "react";
 import "./SimpleCard.style.scss";
 import { SimpleCardProps } from "./SimpleCard.model";
 
-const SimpleCard : FunctionComponent<SimpleCardProps> = ({children, gap, customClassName}) => {
+const SimpleCard: FunctionComponent<SimpleCardProps> = ({ children, gap, customClassName, id }) => {
     return (
-        <div className={`simple-card ${customClassName ? customClassName : ""}`} style={{...gap && {gap: gap}}}>
+        <div
+            id={id}
+            className={`simple-card ${customClassName ?? ""}`}
+            style={{ ...(gap && { gap: gap }) }}
+        >
             {children}
         </div>
     );

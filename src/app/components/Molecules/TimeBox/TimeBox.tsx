@@ -37,7 +37,8 @@ const TimeBox = ({ universeCode, keyValue }) => {
 
     useEffect(() => {
         setTime(TIMER);
-    }, []);
+        setCurrentState("start");
+    }, [keyValue, universeCode]);
 
     useEffect(() => {
         let timer;

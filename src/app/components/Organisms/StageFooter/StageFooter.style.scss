@@ -1,0 +1,18 @@
+/** @format */
+
+.stage-footer {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        padding: 24px 40px;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+        border-radius: 12px;
+
+        & > .next-label{
+            margin-left: auto
+        }
+    }
+}

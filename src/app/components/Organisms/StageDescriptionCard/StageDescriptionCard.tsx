@@ -11,18 +11,15 @@ const StageDescriptionCard = ({ title, description, displayPasteStage }) => {
     const { t } = useTranslation();
 
     const exportToPng = () => {
-        const currentStage = document.getElementById("stage-card");
-        const stepCards = document.getElementById("step-cards");
         const overflowStage = document.getElementById("overflow-stage");
-        stepCards.style.setProperty('overflow', 'visible');
+        const storyCard = document.getElementById("story-card");
+        storyCard.style.setProperty('overflow', 'visible');
         overflowStage.style.setProperty('overflow', 'visible');
-        currentStage.style.setProperty('overflow', 'visible');
         domtoimage
-            .toPng(currentStage, { quality: 0.99 })
+            .toPng(storyCard, { quality: 0.99 })
             .then((dataUrl) => {
-                stepCards.style.removeProperty("overflow");
+                storyCard.style.removeProperty("overflow");
                 overflowStage.style.removeProperty("overflow");
-                currentStage.style.removeProperty("overflow");
                 const binary_string = window.atob(dataUrl.replace("data:image/png;base64,", ""));
                 const len = binary_string.length;
                 const bytes = new Uint8Array(len);
@@ -31,10 +28,9 @@ const StageDescriptionCard = ({ title, description, displayPasteStage }) => {
                 }
                 const buffer = new Uint8Array(bytes.buffer);
                 parent.postMessage({ pluginMessage: { type: "paste-stage", imageData: buffer } }, "*");
-
             })
             .catch(function (error) {
-                stepCards.style.overflow = 'scroll';
+                storyCard.style.overflow = 'scroll';
                 console.error("oops, something went wrong!", error);
             });
     };

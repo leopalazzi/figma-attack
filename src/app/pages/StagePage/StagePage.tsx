@@ -2,7 +2,6 @@
 
 import { useTranslation } from "react-i18next";
 import { useLocation, useParams } from "react-router-dom";
-import NextStage from "../../components/Molecules/NextStage/NextStage";
 import { useEffect, useState } from "react";
 import TwoColumnsGrid from "../../components/Template/TwoColumnsGrid/TwoColumnsGrid";
 import StageDescriptionCard from "../../components/Organisms/StageDescriptionCard/StageDescriptionCard";
@@ -15,6 +14,7 @@ import QuizCard from "../../components/Organisms/QuizCard/QuizCard";
 import ScoreCard from "../../components/Organisms/ScoreCard/ScoreCard";
 import AnswersSummaryCard from "../../components/Organisms/AnswersSummaryCard/AnswersSummaryCard";
 import StoryCard from "../../components/Molecules/StoryCard/StoryCard";
+import StageFooter from "../../components/Organisms/StageFooter/StageFooter";
 
 const StagePage = () => {
     const { t } = useTranslation();
@@ -30,8 +30,8 @@ const StagePage = () => {
             return true;
         }
     });
-    const currentStage = currentDungeon?.stages[Number(stageNumber) - 1];
-    const nextStage = currentDungeon?.stages[Number(stageNumber)];
+    const convertedStageNumber = Number(stageNumber)
+    const currentStage = currentDungeon?.stages[convertedStageNumber - 1];
     const universeBaseUrl = `/universe/${universeCode}`;
     const dungeonBaseUrl = `${universeBaseUrl}/dungeon/${dungeonCode}`;
 
@@ -76,6 +76,7 @@ const StagePage = () => {
                     <StoryCard
                         title={title}
                         description={description}
+                        id="story-card"
                     />
                 );
                 break;
@@ -183,20 +184,13 @@ const StagePage = () => {
                 >
                     {getCurrentStage()}
                 </div>
-                {/* <StepCards steps={currentStage.steps} /> */}
             </TwoColumnsGrid>
             {currentStage.difficulty === "hard" && <div></div>}
-            {/* <DescriptionStageCard
-                title={currentStage.title}
-                description={currentStage.description}
-                steps={currentStage.steps}
-            /> */}
-            {Number(stageNumber) < currentDungeon.stages.length && (
-                <NextStage
-                    title={nextStage.title}
-                    url={`${dungeonBaseUrl}/stage/${(Number(stageNumber) + 1).toString()}`}
-                />
-            )}
+            <StageFooter
+                dungeonBaseUrl={dungeonBaseUrl}
+                stages={currentDungeon.stages}
+                currentStageNumber={convertedStageNumber}
+            />
         </Layout>
     );
 };

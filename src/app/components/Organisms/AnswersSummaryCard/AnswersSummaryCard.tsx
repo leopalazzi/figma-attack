@@ -19,7 +19,6 @@ const AnswersSummaryCard: FunctionComponent<any> = ({ questions, answers, onClic
             {questions.map((question, index) => {
                 const currentAnswer = answers[index];
                 const { isCorrect, answer } = currentAnswer;
-                console.log(question)
                 return (
                     <div
                         className={b("question-container")}

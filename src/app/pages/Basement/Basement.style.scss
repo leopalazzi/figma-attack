@@ -3,8 +3,7 @@
 .basement {
     &__container {
         display: flex;
-        padding-left: 40px;
-        justify-content: flex-end;
+        padding: 40px;
         align-items: center;
         gap: 195px;
         align-self: stretch;
@@ -16,9 +15,11 @@
         flex-direction: column;
         gap: 16px;
     }
+
     &__universe-card {
         min-width: 1084px;
     }
+    
     &__title-with-button {
         display: flex;
         align-items: center;
@@ -36,7 +37,7 @@
         padding: 4px 8px;
         font-weight: 600;
         position: absolute;
-        left: 255px;
+        left: 205px;
     }
 
     &__button-container {

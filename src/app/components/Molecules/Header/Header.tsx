@@ -16,11 +16,16 @@ const Header = () => {
     // window.open("https://google.fr")
   }
 
+  const onClickDiscord = (event) => {
+    event.preventDefault()
+    window.open("https://discord.gg/qENwmSHM")
+  }
+
 
   return (
     <header className={b('container')}>
-      <a onClick={onClick} href="https://google.fr"><img src={logo} alt="Figmattack logo"/></a>
-      <a href="https://discord.gg/HXEen8pe"><img src={discordLogo} alt="Figmattack Discord"/></a>
+      <a onClick={onClick}><img src={logo} alt="Figmattack logo"/></a>
+      <a href="https://discord.gg/qENwmSHM" onClick={onClickDiscord}><img src={discordLogo} alt="Figmattack Discord"/></a>
     </header>
   );
 };
