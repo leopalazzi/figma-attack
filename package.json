@@ -1,6 +1,6 @@
 {
   "name": "figma-plugin-react-template",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Figmattack: How to be an expert in UX/UI with a simple plugin !",
   "license": "ISC",
   "scripts": {
