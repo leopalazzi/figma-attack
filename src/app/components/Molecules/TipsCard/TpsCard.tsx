@@ -14,7 +14,7 @@ const TipsCard = ({ tips }) => {
             <h4 className={bem("title")}>{`${t("tipsLabel")}`}</h4>
             <ul className={bem("list")}>
                 {tips.map((tip) => {
-                    return <li>{tip}</li>;
+                    return <li key={tip}>{tip}</li>;
                 })}
             </ul>
         </SimpleCard>

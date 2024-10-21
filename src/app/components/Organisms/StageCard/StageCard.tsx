@@ -22,15 +22,14 @@ const StageCard = ({ stageNumberTitle, title, universeCode, dungeonCode, stageNu
                 <span>{stageNumberTitle}</span>
                 <h4 className={b("title")}>{title}</h4>
             </div>
-            <div
+            <button
                 aria-label={`Go to stage ` + stageNumber}
                 className={b("next-container")}
-                tabIndex={0}
                 onClick={onClickNextStage}
             >
                 <span className={b(`start-label`).mix(universeCode)}>{t("startStageLabel")}</span>
                 <NextArrowIcon universeCode={universeCode} />
-            </div>
+            </button>
         </div>
     );
 };

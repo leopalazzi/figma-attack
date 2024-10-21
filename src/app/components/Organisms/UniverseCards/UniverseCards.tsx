@@ -13,17 +13,12 @@ const UniverseCards: FunctionComponent<UniverseCardsProps> = ({ universes, type 
         <div className={`universe-cards-${type}`}>
             {universes.map((universe, index) => {
                 const numberDungeons = universe.dungeons.length;
-                // const numberSideQuests = universe.side_quests.length;
                 const badgesData = [
                     { label: universe.level },
                     {
                         universe: universe.code,
                         label: `${numberDungeons} ${t("dungeonsLabel")}`,
-                    },
-                    // {
-                    //     universe: universe.code,
-                    //     label: `${numberSideQuests} ${t("sideQuestsLabel")}`,
-                    // },
+                    }
                 ];
                 const universeImg = require(`../../../assets/home/universe-${(index + 1).toString()}.png`).default;
                 return (

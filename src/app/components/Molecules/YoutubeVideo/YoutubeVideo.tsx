@@ -17,6 +17,7 @@ export const YoutubeVideo: FunctionComponent<any> = ({ videoData }) => {
                 src={`https://www.youtube.com/embed/${videoData.id}?enablejsapi=1`}
                 frameBorder="0"
                 style={{ borderRadius: "8px" }}
+                title={videoData.title}
             />
             <h3 className={b("title")}>{videoData.title}</h3>
         </div>

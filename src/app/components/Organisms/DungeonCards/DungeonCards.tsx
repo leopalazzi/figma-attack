@@ -11,15 +11,15 @@ import { useRef } from "react";
 const DungeonCards = ({ dungeons, universCode }) => {
     const { t } = useTranslation();
     const b = Bem("dungeon-cards");
-    const scrollRef = useRef(null); // Reference for the SimpleBar container
+    const scrollRef = useRef(null);
 
-    // Function to handle horizontal scroll with mouse wheel
     const handleWheel = (e) => {
         if (scrollRef.current) {
             e.preventDefault(); // Prevent default vertical scrolling
-            scrollRef.current.scrollLeft += e.deltaY; // Scroll horizontally instead
+            scrollRef.current.scrollLeft += e.deltaY;
         }
     };
+
     return (
         <div className={b()}>
             <h2 className={b("title")}>{t("dungeonsLabel")}</h2>
@@ -29,9 +29,9 @@ const DungeonCards = ({ dungeons, universCode }) => {
                     style={{ overflowX: "auto" }}
                     className="scroll-container"
                     autoHide={false}
-                    scrollableNodeProps={{ ref: scrollRef }} // Attach the ref here
+                    scrollableNodeProps={{ ref: scrollRef }}
                 >
-                    <div style={{ display: "flex", gap: "24px"}} onWheel={handleWheel}>
+                    <div className={b("horizontal-container")} onWheel={handleWheel}>
                         {dungeons.map((dungeon, index) => {
                             return (
                                 <DungeonCard

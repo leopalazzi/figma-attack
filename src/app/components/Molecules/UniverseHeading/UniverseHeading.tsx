@@ -14,7 +14,7 @@ export const UniverseHeading: FunctionComponent<any> = ({ currentUniverse, badge
             className={b("container")}
             {...customProps}
         >
-            <img src={getUniverseIcon(currentUniverse.code)} width={"40px"} height={"40px"}/>
+            <img src={getUniverseIcon(currentUniverse.code)} alt="" width={"40px"} height={"40px"}/>
             <TitleWithDescription
                 title={currentUniverse.title}
                 description={currentUniverse.description}

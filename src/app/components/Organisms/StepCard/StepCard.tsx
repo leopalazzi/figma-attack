@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 
 const StepCard = ({ stepNumber, description, storyDescription }) => {
     const bem = Bem("stage-description-card-text");
-
     const { t } = useTranslation();
 
     return (

@@ -5,27 +5,12 @@ import UniversButton from "../../Atoms/UniversButton/UniversButton";
 import { useTranslation } from "react-i18next";
 import Bem from "../../../helpers/Bem";
 import "./DungeonCard.style.scss";
-// @ts-ignore
-import neophyteNexusLogo from "../../../assets/universes/logo_neophyte_nexus.png";
 
 const DungeonCard = ({ title, description, stages, universCode, dungeonCode }) => {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const b = Bem("dungeon-card");
     const dungeonImg = require(`../../../assets/dungeons/${dungeonCode}.svg`);
-
-    // const onClick = () => {
-    //   navigate(`/universe/${universCode}`);
-    // };
-
-    // const getUniverseLogo = () => {
-    //   let universeLogo;
-    //   switch(universCode){
-    //     case 'neophyte_nexus':
-    //       universeLogo = neophyteNexusLogo;
-    //   }
-    //   return universeLogo;
-    // }
 
     const onClickVisit = () => {
         navigate(`/universe/${universCode}/dungeon/${dungeonCode}`);
@@ -38,7 +23,7 @@ const DungeonCard = ({ title, description, stages, universCode, dungeonCode }) =
     return (
         <div className={b("container")}>
             <div className={b("heading")}>
-                <img src={dungeonImg.default} />
+                <img src={dungeonImg.default} alt=""/>
                 <span className={b("stages-label")}>{`${stages.length} Stages`}</span>
             </div>
             <div className={b("title-container")}>
