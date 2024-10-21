@@ -15,7 +15,7 @@ const AnswersSummaryCard: FunctionComponent<any> = ({ questions, answers, onClic
 
     return (
         <SimpleCard gap="24px">
-            <h2 className={b("title")}>Summary</h2>
+            <h2 className={b("title")}>{t("answersSummaryCard.summary")}</h2>
             {questions.map((question, index) => {
                 const currentAnswer = answers[index];
                 const { isCorrect, answer } = currentAnswer;
@@ -26,7 +26,7 @@ const AnswersSummaryCard: FunctionComponent<any> = ({ questions, answers, onClic
                     >
                         <span className={b("question-index")}>{`Question ${index + 1}.`}</span>
                         <div className={b("question-label")}>{question.title}</div>
-                        <span className={b("answer-label")}>Your answer:</span>
+                        <span className={b("answer-label")}>{t("answersSummaryCard.answerLabel")}</span>
                         <div className={b("answer-container")}>
                             <img
                                 src={isCorrect ? correctAnswerLogo : wrongAnswerLogo}
@@ -36,7 +36,7 @@ const AnswersSummaryCard: FunctionComponent<any> = ({ questions, answers, onClic
                         </div>
                         {
                             !isCorrect && <>
-                                <span className={b("answer-label")}>Correct answer</span>
+                                <span className={b("answer-label")}>{t("answersSummaryCard.correctAnswer")}</span>
                                 <span className={b("answer-title")}>{question.correctAnswer}</span>
                             </>
                         }

@@ -30,8 +30,13 @@
         "checkResults": "Check results",
         "retry": "Retry"
     },
+    "answersSummaryCard": {
+        "summary": "Summary",
+        "answerLabel": "Your answer:",
+        "correctAnswer": "Correct answer"
+    },
     "recommandation":{
-        "label": "We recommend you this universe:",
+        "label": "We recommend this to you:",
         "buttonLabel": "See all Universes"
     },
     "basement": {
@@ -101,7 +106,7 @@
         {
             "code": "neophyte_nexus",
             "title": "Neophyte Nexus",
-            "description": "If you start with Figma, this Universe is made for you.",
+            "description": "If you are starting with Figma, this Universe is made for you.",
             "level": "Easy",
             "numberSideQuests": "",
             "dungeons": [
