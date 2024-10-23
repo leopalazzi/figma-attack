@@ -41,11 +41,6 @@ export const knowledgesVideo = [
         filters: [filtersType.autoLayout],
     },
     {
-        id: "1X5EZrUBGcc",
-        title: "Build a Figma Component the Right Way | Exclusive UI Collective Event",
-        filters: [filtersType.autoLayout],
-    },
-    {
         id: "dKpoWGxDYt8",
         title: "Build a Responsive Card Component Using Max/Min",
         filters: [filtersType.autoLayout],

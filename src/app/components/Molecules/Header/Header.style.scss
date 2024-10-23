@@ -1,10 +1,19 @@
-.header{
-    &__container{
+/** @format */
+
+.header {
+    &__container {
         display: flex;
         padding: 16px 40px;
         justify-content: space-between;
         align-items: center;
         align-self: stretch;
         background: #000;
+    }
+
+    &__figma-logo {
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
     }
 }
