@@ -16,4 +16,10 @@
         border: none;
         padding: 0;
     }
+
+    &__logo-container {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
 }

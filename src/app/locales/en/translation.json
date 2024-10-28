@@ -11,6 +11,11 @@
         "start": "Start Dungeon",
         "visit": "Visit Dungeon"
     },
+    "exercicesLabel": {
+        "quiz": "Quiz",
+        "story": "Story",
+        "timebox": "Timebox"
+    },
     "startStageLabel": "Start Stage",
     "basementLabel": "Basement",
     "knowledgeLabel": "Knowledge Base",

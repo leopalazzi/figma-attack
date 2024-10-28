@@ -5,8 +5,9 @@ import { useTranslation } from "react-i18next";
 import Bem from "../../../helpers/Bem";
 import "./StageCard.style.scss";
 import NextArrowIcon from "../../../icons/NextArrowIcon/NextArrowIcon";
+import Badge from "../../Atoms/Badge/Badge";
 
-const StageCard = ({ stageNumberTitle, title, universeCode, dungeonCode, stageNumber }) => {
+const StageCard = ({ stageNumberTitle, type, title, universeCode, dungeonCode, stageNumber }) => {
     const navigate = useNavigate();
     const { t } = useTranslation();
     const b = Bem("stage-card");
@@ -19,7 +20,10 @@ const StageCard = ({ stageNumberTitle, title, universeCode, dungeonCode, stageNu
     return (
         <div className={b("container")}>
             <div className={b("text-container")}>
-                <span>{stageNumberTitle}</span>
+                <div className={b("exercice")}>
+                    <span>{stageNumberTitle}</span>
+                    <Badge>{t(`exercicesLabel.${type}`)}</Badge>
+                </div>
                 <h4 className={b("title")}>{title}</h4>
             </div>
             <button

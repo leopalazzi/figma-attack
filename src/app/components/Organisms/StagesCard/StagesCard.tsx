@@ -13,6 +13,7 @@ const StagesCard = ({ universeCode, dungeonCode, stages }) => {
                     <StageCard
                         stageNumberTitle={`${t("stageLabel")} ${index + 1}`}
                         title={stage.title}
+                        type={stage.type}
                         universeCode={universeCode}
                         dungeonCode={dungeonCode}
                         stageNumber={index + 1}
