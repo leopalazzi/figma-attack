@@ -43,7 +43,7 @@ figma.ui.onmessage = async (msg) => {
             const onBoardingDone = await figma.clientStorage.getAsync("onBoardingDone");
             figma.ui.postMessage({
                 type: "onboarding-status",
-                // onBoardingDone: !!onBoardingDone
+                onBoardingDone: !!onBoardingDone
             });
             break;
         case "onboarding-done":
