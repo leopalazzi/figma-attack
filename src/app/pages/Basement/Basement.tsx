@@ -6,10 +6,26 @@ import "./Basement.style.scss";
 import TitleWithDescription from "../../components/Molecules/TitleWithDescription/TitleWithDescription";
 import Bem from "../../helpers/Bem";
 import ActionButton from "../../components/Atoms/ActionButton/ActionButton";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AppContext } from "../../store/appContext";
+import { pagesCode } from "../../config/config";
 
 const Basement = () => {
     const { t } = useTranslation();
     const b = Bem("basement");
+    const navigate = useNavigate();
+    const { setActivePage } = useContext(AppContext);
+
+    const onClickUniverses = () => {
+        setActivePage(pagesCode.universes);
+        navigate("/home");
+    };
+
+    const onClickKnowledgeBase = () => {
+        setActivePage(pagesCode.knowledges);
+        navigate("/knowledges");
+    };
 
     return (
         <Layout>
@@ -21,10 +37,14 @@ const Basement = () => {
                         description={t("basement.description")}
                     />
                     <div className={b("button-container")}>
-                        <ActionButton label="Discover Universes" />
+                        <ActionButton
+                            label="Discover Universes"
+                            onClick={onClickUniverses}
+                        />
                         <ActionButton
                             label="Go to Knowledge Base"
                             outline={true}
+                            onClick={onClickKnowledgeBase}
                         />
                     </div>
                 </div>
